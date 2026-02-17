@@ -39,20 +39,20 @@ export default function Questions() {
     return (
         <div className="bg-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-2xl lg:max-w-7xl px-4">
-                <h1 className="text-2xl font-semibold text-left md:text-center tracking-tight text-pretty text-green-900 sm:text-4xl">
+                <h1 className="text-2xl font-semibold text-left md:text-center tracking-tight text-pretty text-gray-900 sm:text-4xl">
                     Foire aux questions
                 </h1>
                 <div className="divide-y mt-6 divide-green-900">
                     {questions.map(question => (
                         <Disclosure key={question.id} as="div" className="py-4" defaultOpen={false}>
                             <DisclosureButton className="group flex w-full items-center justify-between">
-                                <span className="text-lg/8 font-semibold text-left text-green-900">
+                                <span className="text-lg/8 font-semibold text-left text-gray-900">
                                    {question.topic}
                                 </span>
-                                <PlusIcon className="size-6 text-green-900 group-data-open:hidden"></PlusIcon>
-                                <MinusIcon className="size-6 text-green-900 not-group-data-open:hidden"></MinusIcon>
+                                <PlusIcon className="size-6 text-gray-900 group-data-open:hidden"></PlusIcon>
+                                <MinusIcon className="size-6 text-gray-900 not-group-data-open:hidden"></MinusIcon>
                             </DisclosureButton>
-                            <DisclosurePanel className="mt-2 text-stone-700 text-lg/8">
+                            <DisclosurePanel className="mt-2 text-gray-800 text-lg/8">
                                 {question.answer}
                             </DisclosurePanel>
                         </Disclosure>

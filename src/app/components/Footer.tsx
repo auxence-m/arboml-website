@@ -20,11 +20,11 @@ const services = [
         href: "#",
     },
     {
-        name: "Plantations d’arbres & arbustes",
+        name: "Plantations d’arbres et arbustes",
         href: "#",
     },
     {
-        name: "Fertilisation & décompactions de sol",
+        name: "Fertilisation et décompactions de sol",
         href: "#",
     },
     {

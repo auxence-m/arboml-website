@@ -12,7 +12,7 @@ export default function Hero() {
                     La santé de vos arbres et arbustes est notre priorité
                 </p>
             </div>
-            <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-4 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-2">
+            <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 px-4 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-2">
                 <div className="relative text-center lg:text-left my-auto">
                     <p className="text-lg/8 text-pretty text-gray-900">
                         Nous offrons des services d&#39;entretien d&#39;arbres et arbustes (élagage, abattage, taille de haies,

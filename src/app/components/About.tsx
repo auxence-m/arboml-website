@@ -45,10 +45,10 @@ export default function About() {
         <div className="bg-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-2xl text-left md:text-center">
-                    <h1 className="text-2xl font-semibold tracking-tight text-pretty text-green-900 sm:text-4xl lg:text-balance">
+                    <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
                         Pourquoi choisir ArboML ?
                     </h1>
-                    <p className="mt-4 text-lg/8 text-stone-700">
+                    <p className="mt-4 text-lg/8 text-gray-800">
                         Pour votre tranquillité et celle de vos voisins, nous utilisons principalement des outils électriques afin de réduire le bruit et la pollution.
                     </p>
                 </div>
@@ -56,13 +56,13 @@ export default function About() {
                     <dl className="grid max-2w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-7xl lg:grid-cols-2 lg:gap-y-16">
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
-                                <dt className="text-lg/8 font-semibold text-green-900">
-                                    <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-green-100">
-                                        <feature.icon aria-hidden="true" className="size-6 text-green-900" />
+                                <dt className="text-lg/8 font-semibold text-gray-900">
+                                    <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-green-200">
+                                        <feature.icon aria-hidden="true" className="size-6 text-gray-900" />
                                     </div>
                                     {feature.name}
                                 </dt>
-                                <dd className="mt-2 text-lg/8 text-stone-700">{feature.description}</dd>
+                                <dd className="mt-2 text-lg/8 text-gray-800">{feature.description}</dd>
                             </div>
                         ))}
                     </dl>
