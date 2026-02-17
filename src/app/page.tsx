@@ -6,16 +6,16 @@ import Questions from "@/app/components/Questions";
 import Footer from "@/app/components/Footer";
 
 export default function Home() {
-  return (
-    <div>
-      <Header />
-      <main className="">
-        <Hero/>
-          <About/>
-          <EstimateCTA/>
-          <Questions/>
-      </main>
-        <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <main>
+                <Hero/>
+                <About/>
+                <EstimateCTA/>
+                <Questions/>
+            </main>
+            <Footer/>
+        </div>
+    );
 }

@@ -20,11 +20,11 @@ const services = [
         href: "#",
     },
     {
-        name: "Plantations d’arbres et arbustes",
+        name: "Plantations d’arbres & arbustes",
         href: "#",
     },
     {
-        name: "Fertilisation et décompactions de sol",
+        name: "Fertilisation & décompactions de sol",
         href: "#",
     },
     {
@@ -42,7 +42,7 @@ export default function Footer() {
     return (
         <footer className="z-50 w-full bg-linear-to-t from-green-300 via-green-300 to-green-50">
             <div className="mx-auto max-w-2xl lg:max-w-7xl px-4 py-8 sm:py-10 border-b border-b-gray-900">
-                <div className="grid grid-cols-1 gap-x-10 gap-y-10 lg:grid-cols-2 lg:gap-y-16">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                     <div className="flex flex-col gap-y-2">
                         <Image
                             alt="ARBOML logo"
@@ -56,7 +56,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <hr className="lg:hidden"/>
-                    <div className="grid grid-cols-1 gap-x-10 gap-y-10 lg:grid-cols-2 lg:gap-y-16">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                         <div className="text-left">
                             <p className="text-lg font-bold tracking-tight text-pretty text-gray-900">
                                 Services

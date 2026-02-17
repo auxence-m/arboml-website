@@ -1,4 +1,4 @@
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { PlusIcon, MinusIcon } from "@heroicons/react/20/solid";
 
 const questions = [
@@ -39,12 +39,12 @@ export default function Questions() {
     return (
         <div className="bg-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-2xl lg:max-w-7xl px-4">
-                <p className="text-2xl font-semibold text-center tracking-tight text-pretty text-green-900 sm:text-4xl">
+                <h1 className="text-2xl font-semibold text-left md:text-center tracking-tight text-pretty text-green-900 sm:text-4xl">
                     Foire aux questions
-                </p>
+                </h1>
                 <div className="divide-y mt-6 divide-green-900">
                     {questions.map(question => (
-                        <Disclosure key={question.id} as="div" className="py-4.5" defaultOpen={false}>
+                        <Disclosure key={question.id} as="div" className="py-4" defaultOpen={false}>
                             <DisclosureButton className="group flex w-full items-center justify-between">
                                 <span className="text-lg/8 font-semibold text-left text-green-900">
                                    {question.topic}
