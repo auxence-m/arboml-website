@@ -1,42 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
-
-const services = [
-    {
-        name: "Abattage",
-        href: "#",
-    },
-    {
-        name: "Élagage",
-        href: "#",
-    },
-    {
-        name: "Taille de Haies",
-        href: "#",
-    },
-    {
-        name: "Haubanage",
-        href: "#",
-    },
-    {
-        name: "Plantations d’arbres et arbustes",
-        href: "#",
-    },
-    {
-        name: "Fertilisation et décompactions de sol",
-        href: "#",
-    },
-    {
-        name: "Traitement de plaies",
-        href: "#",
-    },
-    {
-        name: "Diagnostic",
-        href: "#",
-    }
-]
-
+import {services} from "@/app/data";
+import {scrollToService} from "@/app/utils";
 
 export default function Footer() {
     return (
@@ -63,9 +31,13 @@ export default function Footer() {
                             </p>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
                                 {services.map((service) => (
-                                    <Link key={service.name} href={service.href} className="hover:underline hover:underline-offset-2">
-                                        {service.name}
-                                    </Link>
+                                    <div key={service.name}>
+                                        <Link href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)}  className="group relative transition duration-300">
+                                            {service.name}
+                                            <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-gray-800 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        </Link>
+                                    </div>
+
                                 ))}
                             </div>
                         </div>

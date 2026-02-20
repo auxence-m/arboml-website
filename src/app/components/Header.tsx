@@ -7,8 +7,8 @@ import {Dialog, DialogBackdrop, DialogPanel} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 
 const navigation = [
-    {name: "Accueil", href: "#"},
-    {name: "Services", href: "#"},
+    {name: "Accueil", href: "/"},
+    {name: "Services", href: "/services" },
     {name: "Contact", href: "#"},
     {name: "Galerie", href: "#"},
 ]
@@ -17,10 +17,10 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-green-300">
+        <header className="sticky top-0 z-50 w-full h-16 md:h-20 bg-green-300">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
                 <div className="flex lg:flex-1">
-                    <Link href="#" className="-m-1.5 p-1.5">
+                    <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">ARBO ML</span>
                         <Image
                             alt="ARBOML logo"
@@ -59,7 +59,7 @@ export default function Header() {
                 <div className="fixed inset-0 z-50" />
                 <DialogPanel transition className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-linear-to-b from-green-300 via-green-300 to-green-50 px-5 py-3.5 sm:ring-1 sm:ring-gray-900/10 transform duration-500 ease-in-out data-closed:translate-x-full data-closed:opacity-100 sm:duration-700">
                     <div className="flex items-center justify-between">
-                        <Link href="#" className="mt-0.5 -ml-1">
+                        <Link href="/" className="mt-0.5 -ml-1">
                             <span className="sr-only">Your Company</span>
                             <Image
                                 alt="ARBOML logo"

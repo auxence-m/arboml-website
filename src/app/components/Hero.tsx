@@ -21,7 +21,7 @@ export default function Hero() {
                         questions. Merci.
                     </p>
                     <div className="mt-10 flex gap-x-6 justify-center lg:justify-start">
-                        <Link href="#" className="text-sm sm:text-base rounded-full bg-gray-800 px-6 py-2.5 font-medium hover:bg-gray-900 transition-colors text-green-300">
+                        <Link href="/services" className="text-sm sm:text-base rounded-full bg-gray-800 px-6 py-2.5 font-medium hover:bg-gray-900 transition-colors text-green-300">
                             Nos Services
                         </Link>
                         <Link href="#" className="text-sm sm:text-base rounded-full bg-green-500 px-6 py-2.5 font-medium hover:bg-green-600 transition-colors text-gray-900">
@@ -31,7 +31,7 @@ export default function Hero() {
                 </div>
                 <div className="relative max-lg:order-first">
                     <Image
-                        alt="Product screenshot"
+                        alt="hero image"
                         src="/hero-image.jpg"
                         width={2432}
                         height={1442}
