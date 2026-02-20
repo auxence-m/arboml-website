@@ -36,7 +36,7 @@ export default function Hero() {
                         width={2432}
                         height={1442}
                         priority
-                        className="rounded-lg size-full object-cover"
+                        className="rounded-xl size-full object-cover"
                     />
                 </div>
             </div>

@@ -22,7 +22,7 @@ export default function ServiceDescription() {
                             width={4032}
                             height={3024}
                             priority
-                            className="rounded-lg size-full object-cover"
+                            className="rounded-xl size-full object-cover"
                         />
                     </div>
                 </div>
