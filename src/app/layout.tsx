@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import React from "react";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import "./globals.css";
 
 const poppins = Inter({
     subsets: ["latin"],
@@ -20,7 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased flex h-full flex-col`}>
-        {children}
+        <Header />
+        <main>
+            {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
