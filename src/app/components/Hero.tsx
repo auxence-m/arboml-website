@@ -13,7 +13,7 @@ export default function Hero() {
                 </p>
             </div>
             <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 px-4 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-2">
-                <div className="relative text-center lg:text-left my-auto">
+                <div style={{animationDelay: "0.8s", animationFillMode: "forwards"}} className="relative text-center lg:text-left my-auto animate-fade-right opacity-0 ">
                     <p className="text-lg/8 text-pretty text-gray-900">
                         Nous offrons des services d&#39;entretien d&#39;arbres et arbustes (élagage, abattage, taille de haies,
                         etc.) à Boucherville et sur toute la Rive-Sud de Montréal.
@@ -36,7 +36,7 @@ export default function Hero() {
                         width={2432}
                         height={1442}
                         priority
-                        className="rounded-xl size-full object-cover"
+                        className="rounded-xl size-full object-cover animate-fade-up"
                     />
                 </div>
             </div>

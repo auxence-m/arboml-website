@@ -19,7 +19,7 @@ export default function ServiceHero() {
             </div>
             <div className="mt-10 lg:mt-14 mx-auto max-w-2xl grid grid-cols-1 gap-8 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-2">
                 {services.map((service, index) => (
-                    <Link key={service.name} href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)} style={{animationDelay: `${index * 150}ms`}} className="bg-green-100 group flex gap-x-4 items-center p-4 rounded-xl border border-green-900 shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1 animate-fade-up opacity-0">
+                    <Link key={service.name} href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)} style={{animationDelay: `${index * 200}ms`, animationFillMode: "forwards"}} className="bg-green-100 group flex gap-x-4 items-center p-4 rounded-xl border border-green-900 shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1 animate-fade-up opacity-0">
                         <div className="flex items-center justify-center size-10 rounded-xl bg-green-200 text-green-900 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
                             <service.icon size={24} strokeWidth={1.5} />
                         </div>

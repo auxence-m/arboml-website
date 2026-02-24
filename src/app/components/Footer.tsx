@@ -3,8 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
+import {Copyright} from "lucide-react";
 import {services} from "@/app/data";
 import {scrollToService} from "@/app/utils";
+
 
 export default function Footer() {
     return (
@@ -65,8 +67,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-lg/9 text-gray-900 py-4 flex justify-center">
-                © {new Date().getFullYear()} ArboML. Tous droits réservés.
+            <div className="text-center text-lg/9 text-gray-900 py-4 flex items-center justify-center space-x-1">
+                <Copyright size={20} strokeWidth={1.5}/>
+                <span>{new Date().getFullYear()} ArboML. Tous droits réservés.</span>
             </div>
         </footer>
     );

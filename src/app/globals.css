@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --animate-fade-up: fade-up 0.8s ease-out forwards;
+    --animate-fade-up: fade-up 0.8s ease-out ;
+    --animate-fade-right: fade-right 0.8s ease-out;
 }
 
 @keyframes fade-up {
@@ -12,5 +13,16 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
