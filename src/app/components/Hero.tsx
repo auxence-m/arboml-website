@@ -35,7 +35,7 @@ export default function Hero() {
                         src="/hero-image.jpg"
                         width={2432}
                         height={1442}
-                        priority
+                        loading="eager"
                         className="rounded-xl size-full object-cover animate-fade-up"
                     />
                 </div>

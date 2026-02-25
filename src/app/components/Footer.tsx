@@ -19,6 +19,7 @@ export default function Footer() {
                             src="/logo.svg"
                             width={2048}
                             height={407}
+                            loading="eager"
                             className="h-18 w-70 -ml-4"
                         />
                         <p className="text-lg/8 font-normal text-left tracking-tight text-pretty text-gray-900 lg:text-balance">
@@ -36,7 +37,7 @@ export default function Footer() {
                                     <div key={service.name}>
                                         <Link href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)}  className="group relative transition duration-300">
                                             {service.name}
-                                            <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-gray-800 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                         </Link>
                                     </div>
 
@@ -52,14 +53,14 @@ export default function Footer() {
                                     <EnvelopeIcon className="size-6"/>
                                     <Link href="mailto: info@arboml.ca" className="group relative transition duration-300">
                                         info@arboml.ca
-                                        <span className="absolute bottom-1 left-1/2 h-0.5 w-0 bg-gray-800 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <PhoneIcon className="size-6 mr-2"/>
                                     <Link href="tel: (514) 442-8299" className="group relative transition duration-300">
                                         (514) 442-8299
-                                        <span className="absolute bottom-1 left-1/2 h-0.5 w-0 bg-gray-800 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                             </div>

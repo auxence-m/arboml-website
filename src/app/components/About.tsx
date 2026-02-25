@@ -57,8 +57,8 @@ export default function About() {
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
                                 <dt className="text-lg/8 font-semibold text-gray-900">
-                                    <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-green-200">
-                                        <feature.icon aria-hidden="true" className="size-6 text-gray-900" />
+                                    <div className="absolute top-0 left-0 flex size-12 items-center justify-center rounded-lg bg-green-200">
+                                        <feature.icon aria-hidden="true" className="size-8 text-gray-900" />
                                     </div>
                                     {feature.name}
                                 </dt>

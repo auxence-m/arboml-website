@@ -6,10 +6,10 @@ import Questions from "@/app/components/Questions";
 export default function Home() {
     return (
         <div>
-            <Hero/>
-            <About/>
-            <EstimateCTA/>
-            <Questions/>
+            <Hero />
+            <About />
+            <EstimateCTA />
+            <Questions />
         </div>
     );
 }

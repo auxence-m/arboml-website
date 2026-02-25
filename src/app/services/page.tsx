@@ -1,13 +1,13 @@
 import ServiceHero from "@/app/components/ServiceHero";
 import ServiceDescription from "@/app/components/ServiceDescription";
-import ContactCTA from "@/app/components/ContactCTA";
+import ServiceCTA from "@/app/components/ServiceCTA";
 
 export default function Services() {
     return (
         <div>
             <ServiceHero />
             <ServiceDescription />
-            <ContactCTA />
+            <ServiceCTA />
         </div>
     );
 }

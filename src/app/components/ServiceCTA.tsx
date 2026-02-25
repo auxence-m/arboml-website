@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ContactCTA() {
+export default function ServiceCTA() {
     return (
         <div className="bg-green-50 pb-20 sm:pb-24">
             <div className="mx-auto max-w-7xl px-4">
