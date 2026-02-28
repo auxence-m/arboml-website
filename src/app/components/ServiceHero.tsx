@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link";
-import {services} from "@/app/data";
-import {scrollToService} from "@/app/utils";
+import {services} from "@/app/lib/data";
+import {scrollToService} from "@/app/lib/utils";
 
 export default function ServiceHero() {
     return (

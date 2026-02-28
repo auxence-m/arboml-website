@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
 import {Copyright} from "lucide-react";
-import {services} from "@/app/data";
-import {scrollToService} from "@/app/utils";
+import {services} from "@/app/lib/data";
+import {scrollToService} from "@/app/lib/utils";
 
 
 export default function Footer() {
