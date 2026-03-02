@@ -19,9 +19,9 @@ export default function ServiceDescription() {
                         <Image
                             alt={service.name}
                             src={service.imageSrc}
-                            width={4032}
-                            height={3024}
-                            priority
+                            width={service.imageWidth}
+                            height={service.imageHeight}
+                            loading="eager"
                             className="rounded-xl size-full object-cover"
                         />
                     </div>

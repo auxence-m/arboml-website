@@ -58,7 +58,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="#" className="rounded-full border border-solid border-gray-900 px-6 py-2.5 text-md/6 font-semibold hover:bg-green-500 hover:border-transparent transition-colors text-gray-900">
+                    <Link href="/contact" className="rounded-full border border-solid border-gray-900 px-6 py-2.5 text-md/6 font-semibold hover:bg-green-500 hover:border-transparent transition-colors text-gray-900">
                         Soumission Gratuite <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </div>

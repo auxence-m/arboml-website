@@ -24,7 +24,7 @@ export default function Hero() {
                         <Link href="/services" className="text-sm sm:text-base rounded-full bg-gray-800 px-6 py-2.5 font-medium hover:bg-gray-900 transition-colors text-green-300">
                             Nos Services
                         </Link>
-                        <Link href="#" className="text-sm sm:text-base rounded-full bg-green-500 px-6 py-2.5 font-medium hover:bg-green-600 transition-colors text-gray-900">
+                        <Link href="/contact" className="text-sm sm:text-base rounded-full bg-green-500 px-6 py-2.5 font-medium hover:bg-green-600 transition-colors text-gray-900">
                             Contactez-nous <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>
