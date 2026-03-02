@@ -2,6 +2,11 @@ import {CircleCheckBig} from "lucide-react";
 import Link from "next/link";
 import {cookies} from "next/headers";
 import {redirect} from "next/navigation";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Confirmation',
+};
 
 export default async function Confirmation() {
     const cookieStore = await cookies()
