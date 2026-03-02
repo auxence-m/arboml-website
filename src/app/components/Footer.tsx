@@ -29,9 +29,9 @@ export default function Footer() {
                     <hr className="lg:hidden"/>
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                         <div className="text-left">
-                            <p className="text-lg font-bold tracking-tight text-pretty text-gray-900">
+                            <h3 className="text-lg font-semibold tracking-tight text-pretty text-gray-900">
                                 Services
-                            </p>
+                            </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
                                 {services.map((service) => (
                                     <div key={service.name}>
@@ -45,9 +45,9 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="text-left">
-                            <p className="text-lg font-bold tracking-tight text-pretty text-gray-900">
+                            <h3 className="text-lg font-semibold tracking-tight text-pretty text-gray-900">
                                 Contact
-                            </p>
+                            </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
                                 <div className="flex items-center space-x-2">
                                     <EnvelopeIcon className="size-6"/>

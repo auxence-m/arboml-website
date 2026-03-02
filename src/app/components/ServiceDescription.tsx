@@ -11,9 +11,9 @@ export default function ServiceDescription() {
                         <h2 className="text-3xl/8 font-semibold text-gray-900">
                             {service.name}
                         </h2>
-                        <div className="mt-6 text-lg/8 text-pretty text-gray-800 whitespace-pre-line">
+                        <p className="mt-6 text-lg/8 text-pretty text-gray-800 whitespace-pre-line">
                             {service.description}
-                        </div>
+                        </p>
                     </div>
                     <div className={`relative max-h-96 max-lg:order-first ${index % 2 !== 0 ? "lg:order-first" : ""}`}>
                         <Image
