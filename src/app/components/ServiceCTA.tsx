@@ -12,7 +12,7 @@ export default function ServiceCTA() {
                        Contacter notre équipe pour une évaluation gratuite et des conseils adaptés à vos arbres
                     </p>
                     <div className="mt-6 flex justify-center">
-                        <Link href="/contact" className="rounded-full px-8 py-2.5 text-md/6 font-semibold bg-gray-800 hover:bg-gray-900 hover:border-transparent transition-colors text-green-300">
+                        <Link href="/contact" className="rounded-full px-8 py-2.5 text-base/6 font-semibold bg-gray-800 hover:bg-gray-900 hover:border-transparent transition-colors text-green-300">
                             Contactez-nous
                         </Link>
                     </div>

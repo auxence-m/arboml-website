@@ -51,14 +51,14 @@ export default function Header() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <Link key={item.name} href={item.href} className="text-md/6 font-semibold text-gray-900 group relative transition duration-300">
+                        <Link key={item.name} href={item.href} className="text-base/6 font-semibold text-gray-900 group relative transition duration-300">
                             {item.name}
                             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="/contact" className="rounded-full border border-solid border-gray-900 px-6 py-2.5 text-md/6 font-semibold hover:bg-green-500 hover:border-transparent transition-colors text-gray-900">
+                    <Link href="/contact" className="rounded-full border border-solid border-gray-900 px-6 py-2.5 text-base/6 font-semibold hover:bg-green-400 hover:border-transparent transition-colors text-gray-900">
                         Soumission Gratuite <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </div>
