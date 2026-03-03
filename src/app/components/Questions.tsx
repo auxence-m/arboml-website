@@ -45,7 +45,7 @@ export default function Questions() {
                 <div className="divide-y mt-6 divide-green-900">
                     {questions.map(question => (
                         <Disclosure key={question.id} as="div" className="py-4" defaultOpen={false}>
-                            <DisclosureButton className="group flex w-full items-center justify-between">
+                            <DisclosureButton as="h3" className="group flex w-full items-center justify-between">
                                 <span className="text-lg/8 font-semibold text-left text-gray-900">
                                    {question.topic}
                                 </span>

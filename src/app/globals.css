@@ -1,8 +1,21 @@
 @import "tailwindcss";
 
+:root {
+    --font-headings: var(--font-headings);
+    --font-body: var(--font-body);
+}
+
 @theme {
     --animate-fade-up: fade-up 0.8s ease-out ;
     --animate-fade-right: fade-right 0.8s ease-out;
+}
+
+body {
+    font-family: var(--font-body), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings), sans-serif;
 }
 
 @keyframes fade-up {

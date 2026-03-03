@@ -15,7 +15,7 @@ export default function ContactHero() {
                 </p>
             </div>
             <div className="mt-12 lg:mt-16 mx-auto max-w-2xl grid grid-cols-1 gap-8 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-3">
-                <div style={{animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border-2 border-gray-800 p-8 animate-fade-right opacity-0">
+                <div style={{animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
                     <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
                         <MailIcon size={30} strokeWidth={1.5}/>
                     </div>
@@ -29,7 +29,7 @@ export default function ContactHero() {
                         </Link>
                     </div>
                 </div>
-                <div style={{animationDelay: `0.5s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border-2 border-gray-800 p-8 animate-fade-right opacity-0">
+                <div style={{animationDelay: `0.5s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
                     <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
                         <Phone size={30} strokeWidth={1.5}/>
                     </div>
@@ -43,7 +43,7 @@ export default function ContactHero() {
                         </Link>
                     </div>
                 </div>
-                <div style={{animationDelay: `1s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border-2 border-gray-800 p-8 animate-fade-right opacity-0">
+                <div style={{animationDelay: `1s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
                     <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
                         <MapPinnedIcon size={30} strokeWidth={1.5}/>
                     </div>

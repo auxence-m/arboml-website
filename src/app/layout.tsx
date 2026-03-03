@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {Montserrat, Open_Sans} from "next/font/google";
 import React from "react";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
@@ -10,7 +10,15 @@ import { Analytics } from "@vercel/analytics/next"
 const montserrat = Montserrat({
     weight: ["600", "700", "800", "900"],
     subsets: ["latin"],
+    variable: "--font-headings",
+    display: "swap"
 });
+
+const openSans = Open_Sans({
+    subsets: ["latin"],
+    variable: "--font-body",
+    display: "swap"
+})
 
 export const metadata: Metadata = {
     title : {
@@ -39,14 +47,10 @@ export const metadata: Metadata = {
     applicationName: "ArboML",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} antialiased flex h-full flex-col`}>
+    <html lang="fr">
+      <body className={`${montserrat.variable} ${openSans.variable} antialiased flex h-full flex-col`}>
         <Header />
         <main>
             {children}
