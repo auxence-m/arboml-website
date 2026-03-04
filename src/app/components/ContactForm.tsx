@@ -102,7 +102,7 @@ export default function ContactForm() {
                     </Field>
                 </Fieldset>
                 <div className="mt-10">
-                    <Button type="submit" disabled={pending} className="block w-full rounded-lg border-2 border-gray-700 bg-green-600  px-3.5 py-2.5 h-12 text-center text-lg font-semibold text-gray-900 showdow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 cursor-pointer disabled:bg-green-500 transition-colors">
+                    <Button type="submit" disabled={pending} className="block w-full rounded-lg border border-gray-700 bg-green-600  px-3.5 py-2.5 h-12 text-center text-lg font-semibold text-gray-900 showdow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 cursor-pointer disabled:bg-green-500 transition-colors">
                         {
                             pending ?
                                 <div className="flex items-center justify-center space-x-2">
