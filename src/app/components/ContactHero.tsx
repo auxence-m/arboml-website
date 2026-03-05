@@ -11,7 +11,7 @@ export default function ContactHero() {
                 <p className="mt-8 text-lg/8 text-gray-800 tracking-tight lg:text-balance">
                     Vous pouvez nous contacter par courriel, par téléphone ou par message texte.
                     Il est également possible de nous envoyer un message en remplissant le formulaire de contact ci-dessous.
-                    Nous nous engageons à vous répondre dans les plus brefs délais. Merci et au plaisir de vous servir !
+                    Nous nous engageons à vous répondre dans les plus brefs délais. Merci et au plaisir de vous servir.
                 </p>
             </div>
             <div className="mt-12 lg:mt-16 mx-auto max-w-2xl grid grid-cols-1 gap-8 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-3">

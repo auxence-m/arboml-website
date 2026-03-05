@@ -43,7 +43,7 @@ export default function Header() {
                     <button
                         type="button"
                         onClick={openMobileMenu}
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-600"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
                     >
                         <span className="sr-only">Open main menu</span>
                         <Bars3Icon aria-hidden="true" className="size-6" />

@@ -1,5 +1,5 @@
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
-import { PlusIcon, MinusIcon } from "@heroicons/react/20/solid";
+import { Minus, Plus} from "lucide-react";
 
 const questions = [
     {
@@ -39,18 +39,20 @@ export default function Questions() {
     return (
         <div className="bg-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-2xl lg:max-w-7xl px-4">
-                <h1 className="text-2xl font-semibold text-left md:text-center tracking-tight text-pretty text-gray-900 sm:text-4xl">
+                <h2 className="text-2xl font-semibold text-left md:text-center tracking-tight text-pretty text-gray-900 sm:text-4xl">
                     Foire aux questions
-                </h1>
+                </h2>
                 <div className="divide-y mt-6 divide-green-900">
                     {questions.map(question => (
                         <Disclosure key={question.id} as="div" className="py-4" defaultOpen={false}>
-                            <DisclosureButton as="h3" className="group flex w-full items-center justify-between">
-                                <span className="text-lg/8 font-semibold text-left text-gray-900">
+                            <DisclosureButton type="button" className="group flex w-full gap-2 items-center justify-between">
+                                <h3 className="flex-1 text-lg/8 font-semibold text-left text-gray-900">
                                    {question.topic}
-                                </span>
-                                <PlusIcon className="size-6 text-gray-900 group-data-open:hidden"></PlusIcon>
-                                <MinusIcon className="size-6 text-gray-900 not-group-data-open:hidden"></MinusIcon>
+                                </h3>
+                                <div className="shrink-0">
+                                    <Plus strokeWidth={2} size={20} className="inline-block text-gray-900 group-data-open:hidden"></Plus>
+                                    <Minus strokeWidth={2} size={20} className="inline-block text-gray-900 not-group-data-open:hidden"></Minus>
+                                </div>
                             </DisclosureButton>
                             <DisclosurePanel className="mt-2 text-gray-800 text-lg/8">
                                 {question.answer}

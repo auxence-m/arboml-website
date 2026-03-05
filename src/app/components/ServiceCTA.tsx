@@ -5,9 +5,9 @@ export default function ServiceCTA() {
         <div className="bg-green-50 pb-20 sm:pb-24">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
+                    <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
                         Prêt à commencer  ?
-                    </h1>
+                    </h2>
                     <p className="mt-6 text-lg/8 text-stone-900">
                        Contacter notre équipe pour une évaluation gratuite et des conseils adaptés à vos arbres
                     </p>

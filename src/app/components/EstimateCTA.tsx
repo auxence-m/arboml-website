@@ -5,9 +5,9 @@ export default function EstimateCTA() {
         <div className="bg-linear-to-r from-green-50 via-green-300 to-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
+                    <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
                         Obtenez votre estimation gratuite
-                    </h1>
+                    </h2>
                     <p className="mt-6 text-lg/8 text-stone-900">
                         Remplissez notre formulaire en ligne ou contactez-nous directement pour obtenir une estimation gratuite et sans engagement.
                     </p>

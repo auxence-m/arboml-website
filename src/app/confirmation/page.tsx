@@ -22,9 +22,9 @@ export default async function Confirmation() {
                 <div className="bg-green-100 w-full max-w-xl border rounded-lg shadow-xl p-8">
                     <CircleCheckBig strokeWidth={2} size={34} className="mx-auto text-gray-900"/>
                     <div className="mt-4 text-center text-base/8">
-                        <h3 className="text-lg font-bold text-gray-900">
+                        <h2 className="text-lg font-bold text-gray-900">
                             Message envoyé
-                        </h3>
+                        </h2>
                         <p className="mt-2 text-base/8 text-center text-gray-800">
                             Votre message a bien été envoyé. Nous vous remercions de nous avoir contactés et nous vous répondrons dans les plus brefs délais.
                         </p>

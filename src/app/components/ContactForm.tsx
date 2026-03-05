@@ -20,9 +20,9 @@ export default function ContactForm() {
     return (
         <div className="bg-green-50 mx-auto px-4 py-20 sm:py-24">
             <div className="mx-auto text-center max-w-2xl lg:max-w-7xl">
-                <h3 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900">
+                <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900">
                     Envoyer nous un message
-                </h3>
+                </h2>
             </div>
             <form action={submitAction} className="mx-auto py-12 max-w-2xl sm:py-10 sm:mt-8">
                 <Fieldset className="space-y-8 rounded-xl">

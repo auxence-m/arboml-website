@@ -45,9 +45,9 @@ export default function About() {
         <div className="bg-green-50 py-20 sm:py-24">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-2xl text-left md:text-center">
-                    <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
+                    <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
                         Pourquoi choisir ArboML ?
-                    </h1>
+                    </h2>
                     <p className="mt-4 text-lg/8 text-gray-800">
                         Pour votre tranquillité et celle de vos voisins, nous utilisons principalement des outils électriques afin de réduire le bruit et la pollution.
                     </p>
