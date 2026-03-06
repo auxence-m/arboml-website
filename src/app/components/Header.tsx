@@ -46,7 +46,7 @@ export default function Header() {
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon aria-hidden="true" className="size-6" />
+                        <Bars3Icon aria-hidden="true" className="size-8" />
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
@@ -92,7 +92,7 @@ export default function Header() {
                                 ))}
                             </div>
                             <div className="py-6 px-2">
-                                <Link href="#" onClick={closeMobileMenu} className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
+                                <Link href="/contact" onClick={closeMobileMenu} className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
                                     Soumission Gratuite
                                 </Link>
                             </div>

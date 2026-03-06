@@ -10,7 +10,7 @@ import {scrollToService} from "@/app/lib/utils";
 
 export default function Footer() {
     return (
-        <footer className="z-50 w-full bg-linear-to-t from-green-300 via-green-300 to-green-50">
+        <footer className="w-full bg-linear-to-t from-green-300 via-green-300 to-green-50">
             <div className="mx-auto max-w-2xl lg:max-w-7xl px-4 py-8 sm:py-10 border-b border-b-gray-900">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                     <div className="flex flex-col gap-y-2">
