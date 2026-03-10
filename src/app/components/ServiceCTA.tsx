@@ -8,7 +8,7 @@ export default function ServiceCTA() {
                     <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
                         Prêt à commencer  ?
                     </h2>
-                    <p className="mt-6 text-lg/8 text-stone-900">
+                    <p className="mt-6 text-lg/8 text-pretty text-stone-900">
                        Contacter notre équipe pour une évaluation gratuite et des conseils adaptés à vos arbres
                     </p>
                     <div className="mt-6 flex justify-center">

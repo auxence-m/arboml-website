@@ -8,7 +8,7 @@ export default function EstimateCTA() {
                     <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
                         Obtenez votre estimation gratuite
                     </h2>
-                    <p className="mt-6 text-lg/8 text-stone-900">
+                    <p className="mt-6 text-lg/8 text-pretty text-stone-900">
                         Remplissez notre formulaire en ligne ou contactez-nous directement pour obtenir une estimation gratuite et sans engagement.
                     </p>
                     <div className="mt-6 flex justify-center">

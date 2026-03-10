@@ -25,7 +25,7 @@ export default async function Confirmation() {
                         <h2 className="text-lg font-bold text-gray-900">
                             Message envoyé
                         </h2>
-                        <p className="mt-2 text-base/8 text-center text-gray-800">
+                        <p className="mt-2 text-base/8 text-center text-pretty text-gray-800">
                             Votre message a bien été envoyé. Nous vous remercions de nous avoir contactés et nous vous répondrons dans les plus brefs délais.
                         </p>
                     </div>

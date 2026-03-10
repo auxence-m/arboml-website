@@ -8,7 +8,7 @@ export default function ContactHero() {
                 <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
                     Comment nous joindre
                 </h1>
-                <p className="mt-8 text-lg/8 text-gray-800 tracking-tight lg:text-balance">
+                <p className="mt-8 text-lg/8 text-gray-800 text-pretty lg:text-balance">
                     Vous pouvez nous contacter par courriel, par téléphone ou par message texte.
                     Il est également possible de nous envoyer un message en remplissant le formulaire de contact ci-dessous.
                     Nous nous engageons à vous répondre dans les plus brefs délais. Merci et au plaisir de vous servir.

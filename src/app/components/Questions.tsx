@@ -46,7 +46,7 @@ export default function Questions() {
                     {questions.map(question => (
                         <Disclosure key={question.id} as="div" className="py-4" defaultOpen={false}>
                             <DisclosureButton type="button" className="group flex w-full gap-2 items-center justify-between">
-                                <h3 className="flex-1 text-lg/8 font-semibold text-left text-gray-900">
+                                <h3 className="flex-1 text-lg/8 font-semibold text-left text-pretty text-gray-900">
                                    {question.topic}
                                 </h3>
                                 <div className="shrink-0">

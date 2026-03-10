@@ -22,14 +22,14 @@ export default function Footer() {
                             loading="eager"
                             className="h-18 w-70 -ml-4"
                         />
-                        <p className="text-lg/8 font-normal text-left tracking-tight text-pretty text-gray-900 lg:text-balance">
+                        <p className="text-lg/8 font-normal text-left text-pretty text-gray-900 lg:text-balance">
                             Services d&#39;entretien d&#39;arbres et d&#39;arbustes à Boucherville et sur la Rive-Sud de Montréal
                         </p>
                     </div>
                     <hr className="lg:hidden"/>
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                         <div className="text-left">
-                            <h3 className="text-lg font-semibold tracking-tight text-pretty text-gray-900">
+                            <h3 className="text-lg font-semibold text-pretty text-gray-900">
                                 Services
                             </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
@@ -45,7 +45,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="text-left">
-                            <h3 className="text-lg font-semibold tracking-tight text-pretty text-gray-900">
+                            <h3 className="text-lg font-semibold text-pretty text-gray-900">
                                 Contact
                             </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">

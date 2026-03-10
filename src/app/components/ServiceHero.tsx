@@ -11,7 +11,7 @@ export default function ServiceHero() {
                 <h1 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
                     Nos Services
                 </h1>
-                <p className="mt-8 text-lg/8 text-gray-800 tracking-tight lg:text-balance">
+                <p className="mt-8 text-lg/8 text-gray-800 text-pretty lg:text-balance">
                     Nous offrons différents services d&#39;arboriculture. Vous trouverez ci-dessous les services que nous proposons.
                     Tous nos services sont réalisés de façon professionnelles et sécuritaires, afin d’assurer l&#39;entretien et la santé de vos arbres.
                     N&#39;hésitez pas à nous contacter;  nous ferons de notre mieux pour vous accompagner et de répondre à vos besoins.

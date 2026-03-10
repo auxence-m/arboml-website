@@ -27,8 +27,8 @@ export default function Header() {
         <header className="sticky top-0 z-50 w-full h-16 md:h-20 bg-green-300">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4">
                 <div className="flex lg:flex-1">
-                    <Link href="/" className="-m-1.5 p-1.5">
-                        <span className="sr-only">ARBO ML</span>
+                    <Link href="/" className="-m-1.5 p-1.5 lg:mb-2">
+                        <span className="sr-only">ArboML</span>
                         <Image
                             alt="ARBOML logo"
                             src="/logo.svg"

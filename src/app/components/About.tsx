@@ -62,7 +62,9 @@ export default function About() {
                                     </div>
                                     {feature.name}
                                 </h3>
-                                <p className="mt-2 text-lg/8 text-gray-800">{feature.description}</p>
+                                <p className="mt-2 text-lg/8 text-gray-800 text-pretty">
+                                    {feature.description}
+                                </p>
                             </div>
                         ))}
                     </div>

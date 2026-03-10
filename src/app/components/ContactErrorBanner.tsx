@@ -18,7 +18,7 @@ export default function ContactErrorBanner() {
             <div className="w-full max-w-md md:max-w-7xl">
                 <div className="flex items-center gap-3 rounded-2xl bg-rose-600/90 text-white shadow-xl backdrop-blur-sm p-4">
                     <TriangleAlert strokeWidth={2} size={24} className="shrink-0"/>
-                    <p className="text-sm md:text-base font-medium leading-snug">
+                    <p className="text-sm md:text-base text-pretty font-medium leading-snug">
                         Une erreur s&#39;est produite lors de l&#39;envoi du message. Veuillez
                         réessayer plus tard s&#39;il vous plaît.
                     </p>
