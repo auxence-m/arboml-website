@@ -6,6 +6,7 @@ import Footer from "@/app/components/Footer";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next"
+import ScrollToTop from "@/app/components/ScrollToTop";
 
 const montserrat = Montserrat({
     weight: ["600", "700", "800", "900"],
@@ -54,6 +55,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         <Header />
         <main>
             {children}
+            <ScrollToTop />
             <Analytics />
         </main>
         <Footer />
