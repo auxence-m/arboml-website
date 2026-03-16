@@ -1,7 +1,7 @@
 "use client";
 
 import {Button, Field, Fieldset, Input, Label, Textarea} from "@headlessui/react";
-import {CircleAlert, LoaderCircle} from "lucide-react";
+import {CircleAlert, LoaderCircle, MoveRight} from "lucide-react";
 import {FormState, submitForm} from "@/app/actions";
 import {useActionState} from "react";
 import ContactErrorBanner from "@/app/components/ContactErrorBanner";
@@ -102,15 +102,16 @@ export default function ContactForm() {
                     </Field>
                 </Fieldset>
                 <div className="mt-10">
-                    <Button type="submit" disabled={pending} className="block w-full rounded-lg border border-gray-700 bg-green-600  px-3.5 py-2.5 h-12 text-center text-lg font-semibold text-gray-900 showdow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 cursor-pointer disabled:bg-green-500 transition-colors">
+                    <Button type="submit" disabled={pending} className="block w-full rounded-lg border border-gray-700 bg-green-400 px-3.5 py-2.5 h-12 text-center text-lg font-semibold text-gray-900 showdow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 cursor-pointer disabled:bg-green-600 group">
                         {
                             pending ?
-                                <div className="flex items-center justify-center space-x-2">
+                                <div className="flex items-center justify-center gap-x-2">
                                     <LoaderCircle size={22} strokeWidth={2} className="animate-spin"/>
                                     <p>Envoi en cours...</p>
                                 </div> :
-                                <div>
-                                    Envoyer <span aria-hidden="true">&rarr;</span>
+                                <div className="flex items-center justify-center gap-x-2">
+                                    <p>Envoyer</p>
+                                    <MoveRight size={20} strokeWidth={1.5} className="transition duration-300 ease-in-out group-hover:translate-x-1"/>
                                 </div>
                         }
                     </Button>
