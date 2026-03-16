@@ -15,36 +15,36 @@ export default function ContactHero() {
                 </p>
             </div>
             <div className="mt-12 lg:mt-16 mx-auto max-w-2xl grid grid-cols-1 gap-8 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-3">
-                <div style={{animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
-                    <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
+                <div style={{animationFillMode: "forwards"}} className="rounded-2xl shadow-md border border-gray-800 p-8 animate-fade-right opacity-0 group">
+                    <div className="flex items-center justify-center size-14 rounded-xl bg-green-200 border border-gray-900 text-gray-900 transition duration-300 ease-in-out group-hover:scale-110">
                         <MailIcon size={30} strokeWidth={1.5}/>
                     </div>
                     <h3 className="mt-6 font-semibold text-lg text-gray-900">
                         Envoyez-nous un e-mail
                     </h3>
                     <div className="mt-2 text-lg/8 text-gray-800">
-                        <Link href="mailto: info@arboml.ca" className="group relative transition duration-300">
+                        <Link href="mailto: info@arboml.ca" className="relative transition duration-300">
                             info@arboml.ca
                             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
                     </div>
                 </div>
-                <div style={{animationDelay: `0.5s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
-                    <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
+                <div style={{animationDelay: `0.5s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-md border border-gray-800 p-8 animate-fade-right opacity-0 group">
+                    <div className="flex items-center justify-center size-14 rounded-xl bg-green-200 border border-gray-900 text-gray-900 transition duration-300 ease-in-out group-hover:scale-110">
                         <Phone size={30} strokeWidth={1.5}/>
                     </div>
                     <h3 className="mt-6 font-semibold text-lg text-gray-900">
                         Appelez-nous
                     </h3>
                     <div className="mt-2 text-lg/8 text-gray-800" >
-                        <Link href="tel: (514) 442-8299" className="group relative transition duration-300">
+                        <Link href="tel: (514) 442-8299" className="relative transition duration-300">
                             (514) 442-8299
                             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
                     </div>
                 </div>
-                <div style={{animationDelay: `1s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-lg border border-gray-800 p-8 animate-fade-right opacity-0">
-                    <div className="flex items-center justify-center size-16 rounded-xl bg-green-200 border border-gray-900 text-gray-900">
+                <div style={{animationDelay: `1s`, animationFillMode: "forwards"}} className="rounded-2xl shadow-md border border-gray-800 p-8 animate-fade-right opacity-0 group">
+                    <div className="flex items-center justify-center size-14 rounded-xl bg-green-200 border border-gray-900 text-gray-900 transition duration-300 ease-in-out group-hover:scale-110">
                         <MapPinnedIcon size={30} strokeWidth={1.5}/>
                     </div>
                     <h3 className="mt-6 font-semibold text-lg text-gray-900">
