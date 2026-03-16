@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {Dialog, DialogBackdrop, DialogPanel} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
+import {MoveRight} from "lucide-react";
 
 const navigation = [
     {name: "Accueil", href: "/"},
@@ -58,8 +59,9 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="/contact" className="rounded-full border border-solid border-gray-900 px-6 py-2.5 text-base/6 font-semibold hover:bg-green-400 hover:border-transparent transition-colors text-gray-900">
-                        Soumission Gratuite <span aria-hidden="true">&rarr;</span>
+                    <Link href="/contact" className="flex items-center justify-center gap-x-1 rounded-full border border-solid border-gray-900 text-gray-900 px-6 py-2.5 text-base/6 font-semibold hover:bg-green-400 transition-all duration-300 hover:border-transparent group">
+                        Soumission Gratuite
+                        <MoveRight size={20} strokeWidth={1.5} />
                     </Link>
                 </div>
             </nav>

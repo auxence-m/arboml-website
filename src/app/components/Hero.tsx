@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {MoveRight} from "lucide-react";
 
 export default function Hero() {
     return (
@@ -24,8 +25,9 @@ export default function Hero() {
                         <Link href="/services" className="text-sm sm:text-base rounded-full bg-gray-800 px-6 py-2.5 font-semibold hover:bg-gray-900 transition-colors text-green-300">
                             Nos Services
                         </Link>
-                        <Link href="/contact" className="text-sm sm:text-base rounded-full bg-green-400 px-6 py-2.5 font-semibold hover:bg-green-500 transition-colors text-gray-900">
-                            Contactez-nous <span aria-hidden="true">&rarr;</span>
+                        <Link href="/contact" className="flex items-center justify-center gap-x-1 text-sm sm:text-base rounded-full bg-green-400 text-gray-900 px-6 py-2.5 font-semibold hover:bg-green-500 transition-colors">
+                            Contactez-nous
+                            <MoveRight size={20} strokeWidth={1.5} className="shrink-0" />
                         </Link>
                     </div>
                 </div>
