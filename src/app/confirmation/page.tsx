@@ -6,6 +6,10 @@ import {Metadata} from "next";
 
 export const metadata: Metadata = {
     title: 'Confirmation',
+    robots: {
+        index: false,
+        follow: true,
+    }
 };
 
 export default async function Confirmation() {

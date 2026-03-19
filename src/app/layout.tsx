@@ -48,6 +48,7 @@ export const metadata: Metadata = {
     description: "Services d'entretien d'arbres et d'arbustes à Boucherville et sur la rive-Sud de Montréal",
     generator: 'Next.js',
     applicationName: "ArboML",
+    metadataBase: new URL("https://www.arboml.ca"),
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
