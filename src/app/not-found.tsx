@@ -17,7 +17,7 @@ export default function NotFound() {
                         <Link href="/" className="text-sm sm:text-base font-semibold  text-gray-900">
                             Retour à la page d&#39;accueil
                         </Link>
-                        <span className="transition-all ease-in-out duration-500 group-hover:translate-x-full">
+                        <span className="transition-all ease-in-out duration-500 group-hover:translate-x-2">
                             <MoveRight strokeWidth={1.8} size={20}/>
                         </span>
                     </div>
