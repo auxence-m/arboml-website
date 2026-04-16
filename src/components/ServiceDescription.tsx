@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {services} from "@/app/lib/data";
+import {services} from "@/lib/data";
 
 
 export default function ServiceDescription() {
