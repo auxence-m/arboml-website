@@ -1,4 +1,4 @@
-import {LucideIcon, Axe, Scissors, Sprout, Link, Layers, Bandage, Search} from "lucide-react";
+import {LucideIcon, Axe, Scissors, Sprout, Link, Layers, Search} from "lucide-react";
 
 type Service = {
     id: string;
@@ -34,9 +34,9 @@ export const services: Service[] = [
         icon: Scissors,
     },
     {
-        id: "taille-haies",
-        name: "Taille de haies",
-        description: "Nous offrons un service professionnel de taille de haies effectué par un élagueur diplômé.",
+        id: "tailles",
+        name: "Tailles",
+        description: "Nous offrons un service professionnel de tailles (taille de haies, tailles de formation, etc.) effectué par un élagueur diplômé.",
         imageSrc: "/taille-image.jpg",
         imageWidth: 4032,
         imageHeight: 2268,
@@ -72,15 +72,6 @@ export const services: Service[] = [
         imageWidth: 4032,
         imageHeight: 3024,
         icon: Layers,
-    },
-    {
-        id: "traitement-plaies",
-        name: "Traitement de plaies",
-        description: "Parfois des blessures se forment sur le tronc et les branches des arbres. Il est alors nécessaire de les traiter afin de prévenir l’infestation d’insectes ou de champignons pouvant mettre en danger leur santé structurelle.",
-        imageSrc: "/plaies-image.jpg",
-        imageWidth: 1536,
-        imageHeight: 2048,
-        icon: Bandage,
     },
     {
         id: "diagnostic",

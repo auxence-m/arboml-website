@@ -11,25 +11,18 @@ const questions = [
     },
     {
         id: "faq-2",
-        topic: "Pouvez-vous abattre un arbre près des fils électriques ou d’une structure ?",
-        answer: "Nous ne sommes pas habilités à le faire. " +
-            "Pour tout arbre situé près de fils électriques, l’intervention doit être effectuée par Hydro-Québec ou une équipe autorisée par celle-ci. " +
-            "Nous vous recommandons de les contacter directement afin qu’ils évaluent la situation et procèdent de façon sécuritaire.",
-    },
-    {
-        id: "faq-3",
         topic: "Aidez-vous à planifier la replantation d’arbres ou d'arbustes après un abattage ?",
         answer: "Oui, nous pouvons vous aidez à planifier la replantation après un abattage. " +
             "Nous offrons des services professionnels de plantation d’arbres et d’arbustes pour assurer la santé et l’esthétique de votre terrain.",
     },
     {
-        id: "faq-4",
+        id: "faq-3",
         topic: "Que faites-vous des branches et du bois coupé ?",
         answer: "Après les travaux, nous nous occupons du ramassage et de l’évacuation des branches et débris. " +
             "Si vous le souhaitez, nous pouvons également laisser le bois sur place pour le chauffage ou l’emporter selon votre préférence.",
     },
     {
-        id: "faq-5",
+        id: "faq-4",
         topic: "Travaillez-vous en hiver ?",
         answer: "Oui, nous intervenons toute l’année, y compris en hiver, en utilisant l’équipement adapté pour assurer des travaux sécuritaires et efficaces.",
     },
