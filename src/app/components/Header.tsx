@@ -14,14 +14,14 @@ const navigation = [
 ]
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     function openMobileMenu() {
-        setMobileMenuOpen(true)
+        setMobileMenuOpen(true);
     }
 
     function closeMobileMenu() {
-        setMobileMenuOpen(false)
+        setMobileMenuOpen(false);
     }
 
     return (
@@ -71,7 +71,7 @@ export default function Header() {
                 <DialogPanel transition className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-linear-to-b from-green-300 via-green-300 to-green-50 px-5 py-3.5 sm:ring-1 sm:ring-gray-900/10 transform duration-500 ease-in-out data-closed:translate-x-full data-closed:opacity-100 sm:duration-700">
                     <div className="flex items-center justify-between">
                         <Link href="/" onClick={closeMobileMenu} className="mt-0.5 -ml-1">
-                            <span className="sr-only">Your Company</span>
+                            <span className="sr-only">ArboML</span>
                             <Image
                                 alt="ARBOML logo"
                                 src="/logo.svg"

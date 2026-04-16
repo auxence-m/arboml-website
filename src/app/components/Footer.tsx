@@ -49,14 +49,14 @@ export default function Footer() {
                                 Contact
                             </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
-                                <div className="flex items-center space-x-2">
+                                <div className="flex items-center gap-x-2">
                                     <EnvelopeIcon className="size-6"/>
                                     <Link href="mailto: info@arboml.ca" className="group relative transition duration-300">
                                         info@arboml.ca
                                         <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
-                                <div className="flex items-center space-x-2">
+                                <div className="flex items-center gap-x-2">
                                     <PhoneIcon className="size-6 mr-2"/>
                                     <Link href="tel: (514) 442-8299" className="group relative transition duration-300">
                                         (514) 442-8299
@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-lg/9 text-gray-900 py-4 flex items-center justify-center space-x-1">
+            <div className="text-center text-lg/9 text-gray-900 py-4 flex items-center justify-center gap-x-1">
                 <Copyright size={20} strokeWidth={1.5}/>
                 <span>{new Date().getFullYear()} ArboML. Tous droits réservés.</span>
             </div>
