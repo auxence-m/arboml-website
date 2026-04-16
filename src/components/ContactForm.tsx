@@ -4,7 +4,7 @@ import {Button, Field, Fieldset, Input, Label, Textarea} from "@headlessui/react
 import {CircleAlert, LoaderCircle, MoveRight} from "lucide-react";
 import {FormState, submitForm} from "@/app/actions";
 import {useActionState} from "react";
-import ContactErrorBanner from "@/app/components/ContactErrorBanner";
+import ContactErrorBanner from "@/components/ContactErrorBanner";
 
 const prevState: FormState = {
     message: "",

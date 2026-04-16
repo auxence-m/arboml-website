@@ -1,7 +1,7 @@
-import Hero from "@/app/components/Hero";
-import About from "@/app/components/About";
-import EstimateCTA from "@/app/components/EstimateCTA";
-import Questions from "@/app/components/Questions";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import EstimateCTA from "@/components/EstimateCTA";
+import Questions from "@/components/Questions";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {

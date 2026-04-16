@@ -1,6 +1,6 @@
-import ServiceHero from "@/app/components/ServiceHero";
-import ServiceDescription from "@/app/components/ServiceDescription";
-import ServiceCTA from "@/app/components/ServiceCTA";
+import ServiceHero from "@/components/ServiceHero";
+import ServiceDescription from "@/components/ServiceDescription";
+import ServiceCTA from "@/components/ServiceCTA";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import {Montserrat, Open_Sans} from "next/font/google";
 import React from "react";
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next"
-import ScrollToTop from "@/app/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const montserrat = Montserrat({
     weight: ["600", "700", "800", "900"],

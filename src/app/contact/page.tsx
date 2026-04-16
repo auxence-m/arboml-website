@@ -1,6 +1,6 @@
-import ContactHero from "@/app/components/ContactHero";
-import ContactForm from "@/app/components/ContactForm";
-import ContactCTA from "@/app/components/ContactCTA";
+import ContactHero from "@/components/ContactHero";
+import ContactForm from "@/components/ContactForm";
+import ContactCTA from "@/components/ContactCTA";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
