@@ -5,7 +5,7 @@ const features = [
     {
         name: 'Service annuel local',
         description:
-            'Service d’arboriste professionnel offert toute l’année à Boucherville et sur la Rive-Sud de Montréal, avec une disponibilité rapide et fiable.',
+            'Service d’arboriste professionnel offert toute l’année sur la Rive-Sud de Montréal, avec une disponibilité rapide et fiable.',
         icon: CalendarDaysIcon,
     },
     {
@@ -23,7 +23,7 @@ const features = [
     {
         name: 'Service attentionné',
         description:
-            'Service professionnel et courtois, à l’écoute de vos besoins, avec un réel souci de la santé et de la longévité de vos arbres et arbustes.',
+            'Service professionnel et courtois, à l’écoute de vos besoins, avec un réel souci de la santé et de la longévité de vos arbres.',
         icon: UserGroupIcon,
     },
     {

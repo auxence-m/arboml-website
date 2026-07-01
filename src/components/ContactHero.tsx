@@ -51,7 +51,7 @@ export default function ContactHero() {
                         Zones de services
                     </h3>
                     <p className="mt-2 text-lg/8 text-gray-800">
-                        Boucherville et toute la Rive-Sud de Montréal
+                        Toute la Rive-Sud de Montréal
                     </p>
                 </div>
             </div>

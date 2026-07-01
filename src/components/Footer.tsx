@@ -22,8 +22,8 @@ export default function Footer() {
                             loading="eager"
                             className="h-18 w-70 -ml-4"
                         />
-                        <p className="text-lg/8 font-normal text-left text-pretty text-gray-900 lg:text-balance">
-                            Services d&#39;entretien d&#39;arbres et d&#39;arbustes à Boucherville et sur la Rive-Sud de Montréal
+                        <p className="text-lg/8 font-normal text-left text-pretty text-gray-900 max-w-sm">
+                            Services d&#39;entretien d&#39;arbres sur la Rive-Sud de Montréal
                         </p>
                     </div>
                     <hr className="lg:hidden"/>
@@ -37,7 +37,7 @@ export default function Footer() {
                                     <div key={service.name}>
                                         <Link href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)}  className="group relative transition duration-300">
                                             {service.name}
-                                            <span className="absolute bottom-0 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                         </Link>
                                     </div>
 
@@ -53,14 +53,14 @@ export default function Footer() {
                                     <EnvelopeIcon className="size-6"/>
                                     <Link href="mailto: info@arboml.ca" className="group relative transition duration-300">
                                         info@arboml.ca
-                                        <span className="absolute bottom-1 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                                 <div className="flex items-center gap-x-2">
                                     <PhoneIcon className="size-6 mr-2"/>
                                     <Link href="tel: (514) 442-8299" className="group relative transition duration-300">
                                         (514) 442-8299
-                                        <span className="absolute bottom-1 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                             </div>

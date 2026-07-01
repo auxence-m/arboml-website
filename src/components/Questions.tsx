@@ -11,9 +11,9 @@ const questions = [
     },
     {
         id: "faq-2",
-        topic: "Aidez-vous à planifier la replantation d’arbres ou d'arbustes après un abattage ?",
+        topic: "Aidez-vous à planifier la replantation d’arbres ou  après un abattage ?",
         answer: "Oui, nous pouvons vous aidez à planifier la replantation après un abattage. " +
-            "Nous offrons des services professionnels de plantation d’arbres et d’arbustes pour assurer la santé et l’esthétique de votre terrain.",
+            "Nous offrons des services professionnels de plantation d’arbres et pour assurer la santé et l’esthétique de votre terrain.",
     },
     {
         id: "faq-3",

@@ -54,9 +54,9 @@ export const services: Service[] = [
     {
         id: "plantation",
         name: "Plantation",
-        description: "Que ce soit pour faire de l’ombre, embellir, ou favoriser l’intimité, la plantation d’arbres et arbustes est une solution à envisager. Ils améliorent la qualité de l’air et rendent les milieux de vie plus sain et plus conviviaux.\n" +
+        description: "Que ce soit pour faire de l’ombre, embellir, ou favoriser l’intimité, la plantation d’arbres est une solution à envisager. Ils améliorent la qualité de l’air et rendent les milieux de vie plus sain et plus conviviaux.\n" +
             "\n" +
-            "Nous pouvons vous aider à choisir la bonne essence d’arbre ou d’arbuste à planter selon l’endroit.\n" +
+            "Nous pouvons vous aider à choisir la bonne essence d’arbre à planter selon l’endroit.\n" +
             "\n" +
             "Nous offrons le service complet de plantation.",
         imageSrc: "/plantation-image.jpg",
@@ -67,7 +67,7 @@ export const services: Service[] = [
     {
         id: "diagnostic",
         name: "Diagnostic",
-        description: "Si vous croyez qu’un de vos arbres ou arbustes à un problème (maladies ou insectes), nous sommes en mesure de vous fournir un diagnostic et de vous suggérer les traitements appropriés.",
+        description: "Si vous croyez qu’un de vos arbres à un problème (maladies ou insectes), nous sommes en mesure de vous fournir un diagnostic et de vous suggérer les traitements appropriés.",
         imageSrc: "/diagnostic-image.jpg",
         imageWidth: 1536,
         imageHeight: 864,
