@@ -34,8 +34,8 @@ export const services: Service[] = [
         icon: Scissors,
     },
     {
-        id: "tailles",
-        name: "Tailles",
+        id: "taille",
+        name: "Taille",
         description: "Nous offrons un service professionnel de tailles (taille de haies, tailles de formation, etc.) effectué par un élagueur diplômé.",
         imageSrc: "/taille-image.jpg",
         imageWidth: 4032,
@@ -52,8 +52,8 @@ export const services: Service[] = [
         icon: Link,
     },
     {
-        id: "plantation-arbres-arbustes",
-        name: "Plantations d’arbres et arbustes",
+        id: "plantation",
+        name: "Plantation",
         description: "Que ce soit pour faire de l’ombre, embellir, ou favoriser l’intimité, la plantation d’arbres et arbustes est une solution à envisager. Ils améliorent la qualité de l’air et rendent les milieux de vie plus sain et plus conviviaux.\n" +
             "\n" +
             "Nous pouvons vous aider à choisir la bonne essence d’arbre ou d’arbuste à planter selon l’endroit.\n" +
