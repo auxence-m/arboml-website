@@ -1,4 +1,4 @@
-import {LucideIcon, Axe, Scissors, Sprout, Link, Layers, Search} from "lucide-react";
+import {LucideIcon, Axe, Scissors, Sprout, Link, Trees, Search} from "lucide-react";
 
 type Service = {
     id: string;
@@ -31,7 +31,7 @@ export const services: Service[] = [
         imageSrc: "/elagage-image.jpg",
         imageWidth: 4032,
         imageHeight: 2268,
-        icon: Scissors,
+        icon: Trees,
     },
     {
         id: "taille",
@@ -63,15 +63,6 @@ export const services: Service[] = [
         imageWidth: 4032,
         imageHeight: 2268,
         icon: Sprout,
-    },
-    {
-        id: "fertilisation-decompaction-sol",
-        name: "Fertilisation et décompactions de sol",
-        description: "Nous offrons un service de fertilisation adapté au besoin de vos arbres et arbustes pour une croissance optimale.",
-        imageSrc: "/fertilisation-image.jpg",
-        imageWidth: 4032,
-        imageHeight: 3024,
-        icon: Layers,
     },
     {
         id: "diagnostic",

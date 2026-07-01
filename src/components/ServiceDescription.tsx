@@ -8,7 +8,7 @@ export default function ServiceDescription() {
             {services.map((service, index) => (
                 <div key={service.name} id={service.id} className={`mx-auto max-w-2xl grid grid-cols-1 py-12 gap-x-8 gap-y-10 lg:gap-x-16 lg:max-w-7xl lg:grid-cols-2 scroll-mt-16 md:scroll-mt-20 ${index !== services.length - 1 ? "border-b border-b-gray-500" : ""}`}>
                     <div className="relative flex flex-col justify-start">
-                        <h2 className="text-3xl/8 font-semibold text-gray-900">
+                        <h2 className="text-2xl/8 sm:text-3xl/8 font-semibold text-gray-900">
                             {service.name}
                         </h2>
                         <p className="mt-6 text-lg/8 text-pretty text-gray-800 whitespace-pre-line">

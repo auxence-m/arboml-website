@@ -29,7 +29,7 @@ export default function Footer() {
                     <hr className="lg:hidden"/>
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-y-14">
                         <div className="text-left">
-                            <h3 className="text-lg font-semibold text-pretty text-gray-900">
+                            <h3 className="text-md uppercase font-semibold text-pretty text-gray-900">
                                 Services
                             </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
@@ -37,7 +37,7 @@ export default function Footer() {
                                     <div key={service.name}>
                                         <Link href={`/services/#${service.id}`} onClick={() => scrollToService(service.id)}  className="group relative transition duration-300">
                                             {service.name}
-                                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                            <span className="absolute bottom-0 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                         </Link>
                                     </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="text-left">
-                            <h3 className="text-lg font-semibold text-pretty text-gray-900">
+                            <h3 className="text-md uppercase font-semibold text-pretty text-gray-900">
                                 Contact
                             </h3>
                             <div className="flex flex-col mt-2 gap-y-2 text-base/8 text-gray-800">
@@ -53,14 +53,14 @@ export default function Footer() {
                                     <EnvelopeIcon className="size-6"/>
                                     <Link href="mailto: info@arboml.ca" className="group relative transition duration-300">
                                         info@arboml.ca
-                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                        <span className="absolute bottom-1 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                                 <div className="flex items-center gap-x-2">
                                     <PhoneIcon className="size-6 mr-2"/>
                                     <Link href="tel: (514) 442-8299" className="group relative transition duration-300">
                                         (514) 442-8299
-                                        <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
+                                        <span className="absolute bottom-1 left-0 h-px w-0 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
                                     </Link>
                                 </div>
                             </div>
