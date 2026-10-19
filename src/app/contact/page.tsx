@@ -4,9 +4,10 @@ import ContactCTA from "@/components/ContactCTA";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: 'Contact',
+    title: "Contactez-nous",
+    description: "Contactez ArboML pour vos besoins en entretien, élagage, abattage et plantation d’arbres sur la Rive-Sud de Montréal. Demandez une soumission gratuite dès aujourd’hui.",
     alternates: {
-        canonical: "/contact",
+        canonical: "https://www.arboml.ca/contact",
     }
 };
 

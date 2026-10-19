@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         "Entretien des arbres Boucherville",
         "Arboriste certifié Boucherville",
     ],
-    description: "Services d'entretien d'arbres à sur la rive-Sud de Montréal",
+    description: "Services d'entretien d'arbres (élagage, abattage, taille de haies, etc.) sur toute la Rive-Sud de Montréal.",
     generator: 'Next.js',
     applicationName: "ArboML",
     metadataBase: new URL("https://www.arboml.ca"),

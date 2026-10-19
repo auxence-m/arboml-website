@@ -4,9 +4,10 @@ import ServiceCTA from "@/components/ServiceCTA";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: 'Services',
+    title: 'Nos services',
+    description: "Découvrez les services d’entretien, d’élagage, d’abattage, de plantation d’arbres et de tailles de haies de ArboML sur la Rive-Sud de Montréal. Demandez une soumission gratuite dès aujourd’hui.",
     alternates: {
-        canonical: "/services",
+        canonical: "https://www.arboml.ca/services",
     }
 };
 

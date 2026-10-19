@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-lg/9 text-gray-900 py-4 flex items-center justify-center gap-x-1">
+            <div className="text-center text-md/9 text-gray-900 py-4 flex items-center justify-center gap-x-1">
                 <Copyright size={20} strokeWidth={1.5}/>
                 <span>{new Date().getFullYear()} ArboML. Tous droits réservés.</span>
             </div>
