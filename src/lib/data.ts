@@ -13,7 +13,7 @@ type Service = {
 export const services: Service[] = [
     {
         id: "abattage",
-        name: "Abattage",
+        name: "Abattage d'arabes",
         description: "Lorsque nécessaire, nous sommes en mesure d’effectuer l’abattage de tout arbre.\n" +
             "\n" +
             "Un permis est parfois exigé par les municipalités.",
@@ -66,7 +66,7 @@ export const services: Service[] = [
     },
     {
         id: "diagnostic",
-        name: "Diagnostic",
+        name: "Diagnostic arboricole",
         description: "Si vous croyez qu’un de vos arbres à un problème (maladies ou insectes), nous sommes en mesure de vous fournir un diagnostic et de vous suggérer les traitements appropriés.",
         imageSrc: "/diagnostic-image.jpg",
         imageWidth: 1536,

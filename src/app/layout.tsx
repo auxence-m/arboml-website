@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {Montserrat, Open_Sans} from "next/font/google";
+import {DM_Sans, Space_Grotesk} from "next/font/google";
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,16 +8,16 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 import ScrollToTop from "@/components/ScrollToTop";
 
-const montserrat = Montserrat({
-    weight: ["600", "700", "800", "900"],
+const fontHeading = Space_Grotesk({
     subsets: ["latin"],
-    variable: "--font-headings",
+    variable: "--font-space-grotesk",
     display: "swap"
 });
 
-const openSans = Open_Sans({
+const fontBody = DM_Sans({
     subsets: ["latin"],
-    variable: "--font-body",
+    variable: "--font-dm-sans",
+    style: ["normal", "italic"],
     display: "swap"
 })
 
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
     <html lang="fr">
-      <body className={`${montserrat.variable} ${openSans.variable} antialiased flex h-full flex-col`}>
+      <body className={`${fontHeading.variable} ${fontBody.variable} bg-surface text-on-surface antialiased`}>
         <Header />
-        <main>
+        <main className="w-full pt-20 bg-surface">
             {children}
             <ScrollToTop />
             <Analytics />
