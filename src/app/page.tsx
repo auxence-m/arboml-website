@@ -3,6 +3,7 @@ import About from "@/components/About";
 import EstimateCTA from "@/components/EstimateCTA";
 import Questions from "@/components/Questions";
 import {Metadata} from "next";
+import ServicesOverview from "@/components/ServicesOverview";
 
 export const metadata: Metadata = {
     title: "Services d'entretien d'arbres sur la Rive-Sud de Montréal",
@@ -16,6 +17,7 @@ export default function Home() {
     return (
         <div>
             <Hero />
+            <ServicesOverview />
             <About />
             <EstimateCTA />
             <Questions />

@@ -3,10 +3,12 @@ import {DM_Sans, Space_Grotesk} from "next/font/google";
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next"
-import ScrollToTop from "@/components/ScrollToTop";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const fontHeading = Space_Grotesk({
     subsets: ["latin"],
@@ -60,6 +62,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
             {children}
             <ScrollToTop />
             <Analytics />
+            <SpeedInsights />
         </main>
         <Footer />
       </body>

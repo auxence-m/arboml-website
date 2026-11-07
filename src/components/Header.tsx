@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import {useState} from "react"
 import Image from "next/image";
 import Link from "next/link";
 import {Dialog, DialogBackdrop, DialogPanel} from '@headlessui/react'
@@ -42,7 +42,7 @@ export default function Header() {
                             className="h-10 w-auto"
                         />
                         <div className="flex flex-col">
-                            <span className="font-headline text-[20px] uppercase tracking-tight text-primary leading-none font-bold mt-1.5">Arbo
+                            <span className="font-headline text-[20px] uppercase tracking-tight text-primary leading-none font-bold mt-1.5">ARBO
                                 <span className="text-secondary">ML</span>
                             </span>
                             <span className="font-headline text-[11px] font-semibold tracking-widest text-on-surface-variant uppercase mt-1">Arboriculture • Rive-Sud</span>
@@ -52,12 +52,13 @@ export default function Header() {
                 <div className="flex lg:hidden">
                     <button type="button" onClick={openMobileMenu} className="inline-flex items-center justify-center rounded-md text-primary hover:text-secondary">
                         <span className="sr-only">Ouvrir le menu de navigation</span>
-                        <Menu aria-hidden="true" />
+                        <Menu aria-hidden="true"/>
                     </button>
                 </div>
                 <div className="hidden lg:flex gap-6 ">
                     {navigation.map((item) => (
-                        <Link key={item.name} href={item.href} className={`font-headline text-[15px]/5 font-semibold hover:text-primary hover:font-bold transition-colors duration-300 ${pathname === item.href ? "text-primary font-bold" : "text-on-surface-variant"}`}>
+                        <Link key={item.name} href={item.href}
+                              className={`font-headline text-[15px]/5 font-semibold hover:text-primary hover:font-bold transition-colors duration-300 ${pathname === item.href ? "text-primary font-bold" : "text-on-surface-variant"}`}>
                             {item.name}
                         </Link>
                     ))}
@@ -71,7 +72,8 @@ export default function Header() {
             <Dialog open={mobileMenuOpen} onClose={closeMobileMenu} className="lg:hidden font-headline">
                 <DialogBackdrop className="fixed inset-0 bg-primary/20"/>
                 <div className="fixed inset-0 z-50"/>
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface shadow-lg px-8 py-4.25">
+                <DialogPanel
+                    className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface shadow-lg px-8 py-4.25">
                     <div className="flex items-center justify-between">
                         <Link className="flex items-center gap-2 focus:outline-none" href="/">
                             <Image
@@ -89,26 +91,29 @@ export default function Header() {
                                 <span className="font-headline text-[11px] font-semibold tracking-widest text-on-surface-variant uppercase mt-1">Arboriculture • Rive-Sud</span>
                             </div>
                         </Link>
-                        <button type="button" onClick={closeMobileMenu} className="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <button type="button" onClick={closeMobileMenu}
+                                className="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span className="sr-only">Close menu</span>
-                            <XIcon aria-hidden="true" />
+                            <XIcon aria-hidden="true"/>
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-outline-variant">
                             <div className="py-6">
                                 {navigation.map((item) => (
-                                    <Link key={item.name} href={item.href} onClick={closeMobileMenu} className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-on-surface-variant">
+                                    <Link key={item.name} href={item.href} onClick={closeMobileMenu}
+                                          className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-on-surface-variant">
                                         {item.name}
                                     </Link>
                                 ))}
                             </div>
                             <div className="flex flex-col gap-4 py-6 font-extrabold">
                                 <a href="tel:5144428299" className="font-bold flex items-center gap-1 text-primary hover:text-secondary transition-colors duration-300">
-                                    <Phone size={18} aria-hidden="true" />
+                                    <Phone size={18} aria-hidden="true"/>
                                     <span className="whitespace-nowrap tracking-wider">(514) 442-8299</span>
                                 </a>
-                                <Link href="/contact" onClick={closeMobileMenu} className="items-center justify-center bg-secondary-fixed px-4 py-3 text-center uppercase tracking-wider text-on-secondary-fixed hover:bg-secondary hover:text-surface transition-all duration-300">
+                                <Link href="/contact" onClick={closeMobileMenu}
+                                      className="items-center justify-center bg-secondary-fixed px-4 py-3 text-center uppercase tracking-wider text-on-secondary-fixed hover:bg-secondary hover:text-surface transition-all duration-300">
                                     Demander une soumission gratuite
                                 </Link>
                             </div>
