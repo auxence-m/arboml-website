@@ -42,7 +42,7 @@ export default function Header() {
                             className="h-10 w-auto"
                         />
                         <div className="flex flex-col">
-                            <span className="font-headline text-[20px] uppercase tracking-tight text-primary leading-none font-bold mt-1.5">ARBO
+                            <span className="font-headline text-xl uppercase tracking-tight text-primary leading-none font-bold mt-1.5">ARBO
                                 <span className="text-secondary">ML</span>
                             </span>
                             <span className="font-headline text-[11px] font-semibold tracking-widest text-on-surface-variant uppercase mt-1">Arboriculture • Rive-Sud</span>
@@ -55,15 +55,15 @@ export default function Header() {
                         <Menu aria-hidden="true"/>
                     </button>
                 </div>
-                <div className="hidden lg:flex gap-6 ">
+                <div className="hidden lg:flex gap-6">
                     {navigation.map((item) => (
                         <Link key={item.name} href={item.href}
-                              className={`font-headline text-[15px]/5 font-semibold hover:text-primary hover:font-bold transition-colors duration-300 ${pathname === item.href ? "text-primary font-bold" : "text-on-surface-variant"}`}>
+                              className={`font-headline text-[15px] font-semibold hover:text-secondary hover:font-bold transition-colors duration-300 ${pathname === item.href ? "text-secondary font-bold underline underline-offset-7 decoration-2" : "text-on-surface-variant"}`}>
                             {item.name}
                         </Link>
                     ))}
                 </div>
-                <div className="hidden lg:flex gap-4 font-headline text-[15px]/5 font-bold">
+                <div className="hidden lg:flex gap-4 font-headline text-[15px] font-bold">
                     <Link href="/contact" className="hidden lg:inline-flex items-center justify-center bg-secondary-fixed px-4 py-2 text-center uppercase tracking-wider text-on-secondary-fixed hover:bg-secondary hover:text-surface transition-all duration-300">
                         Demander une soumission gratuite
                     </Link>
@@ -72,8 +72,7 @@ export default function Header() {
             <Dialog open={mobileMenuOpen} onClose={closeMobileMenu} className="lg:hidden font-headline">
                 <DialogBackdrop className="fixed inset-0 bg-primary/20"/>
                 <div className="fixed inset-0 z-50"/>
-                <DialogPanel
-                    className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface shadow-lg px-8 py-4.25">
+                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full h-fit overflow-y-auto bg-surface shadow-lg px-8 pt-4.25 pb-8">
                     <div className="flex items-center justify-between">
                         <Link className="flex items-center gap-2 focus:outline-none" href="/">
                             <Image
@@ -85,7 +84,7 @@ export default function Header() {
                                 className="h-10 w-auto"
                             />
                             <div className="flex flex-col">
-                            <span className="font-headline text-[20px] uppercase tracking-tight text-primary leading-none font-bold mt-1.5">Arbo
+                            <span className="font-headline text-xl uppercase tracking-tight text-primary leading-none font-bold mt-1.5">Arbo
                                 <span className="text-secondary">ML</span>
                             </span>
                                 <span className="font-headline text-[11px] font-semibold tracking-widest text-on-surface-variant uppercase mt-1">Arboriculture • Rive-Sud</span>
@@ -107,8 +106,8 @@ export default function Header() {
                                     </Link>
                                 ))}
                             </div>
-                            <div className="flex flex-col gap-4 py-6 font-extrabold">
-                                <a href="tel:5144428299" className="font-bold flex items-center gap-1 text-primary hover:text-secondary transition-colors duration-300">
+                            <div className="flex flex-col gap-4 py-4 font-extrabold">
+                                <a href="tel:5144428299" className="font-bold flex items-center gap-1 py-2 text-primary hover:text-secondary transition-colors duration-300">
                                     <Phone size={18} aria-hidden="true"/>
                                     <span className="whitespace-nowrap tracking-wider">(514) 442-8299</span>
                                 </a>
