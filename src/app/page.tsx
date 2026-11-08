@@ -1,9 +1,10 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import WhyArboML from "@/components/WhyArboML";
 import EstimateCTA from "@/components/EstimateCTA";
-import Questions from "@/components/Questions";
-import {Metadata} from "next";
 import ServicesOverview from "@/components/ServicesOverview";
+import AreasOverview from "@/components/AreasOverview";
+import FAQuestions from "@/components/FAQuestions";
+import {Metadata} from "next";
 
 export const metadata: Metadata = {
     title: "Services d'entretien d'arbres sur la Rive-Sud de Montréal",
@@ -18,9 +19,11 @@ export default function Home() {
         <div>
             <Hero />
             <ServicesOverview />
-            <About />
+            <WhyArboML />
+            <AreasOverview />
             <EstimateCTA />
-            <Questions />
+            <FAQuestions />
+
         </div>
     );
 }

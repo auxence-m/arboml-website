@@ -46,7 +46,7 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
         }
     }
 
-    // Call sendEmail firebase cloud function
+    // Call sendEmail Firebase cloud function
     try {
         const response = await fetch("https://us-central1-arboml.cloudfunctions.net/sendEmail", {
             method: "POST",

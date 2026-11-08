@@ -5,7 +5,7 @@ import {
     Cable,
     Flower2,
     Scissors,
-    ShieldCheck,
+    Search,
     Sprout,
     TreePine,
 } from "lucide-react";
@@ -40,15 +40,15 @@ const services = [
     {
         title: "Diagnostic arboricole",
         description: "Évaluation phytosanitaire et mécanique complète de vos végétaux pour déceler champignons, chancres, pourritures internes et risques de chute.",
-        icon: ShieldCheck,
+        icon: Search,
     },
 ];
 
 export default function ServicesOverview() {
     return (
-        <section id="services" aria-labelledby="services-heading" className="w-full scroll-mt-20 bg-surface-container-lowest py-20 font-sans lg:py-28">
+        <section id="services" aria-labelledby="services-heading" className="w-full scroll-mt-20 bg-surface-container-lowest py-16 font-sans lg:py-24">
             <div className="mx-auto max-w-7xl px-8">
-                <div className="mb-16  border-b border-surface-container pb-8">
+                <div className="mb-16 border-b border-surface-container pb-8">
                     <div className="max-w-2xl">
                         <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
                             <TreePine size={14} aria-hidden="true" className="shrink-0"/>
@@ -70,7 +70,7 @@ export default function ServicesOverview() {
                                 <h3 className="mb-2 text-xl leading-7 font-headline font-semibold tracking-tight text-primary">
                                     {title}
                                 </h3>
-                                <p className="mb-4 font-body font-medium text-base leading-relaxed text-on-surface-variant">
+                                <p className="mb-4 font-body text-base leading-relaxed text-on-surface-variant">
                                     {description}
                                 </p>
                                 <Link href="/contact" aria-label={`Demander un devis — ${title}`} className="inline-flex items-center gap-1 text-sm leading-5 font-semibold font-headline tracking-wide text-secondary uppercase transition-colors duration-300 group-hover:text-primary">

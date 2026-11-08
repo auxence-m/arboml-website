@@ -95,7 +95,6 @@ export default function Footer() {
                             </div>
                         </address>
                         <div className="mt-4 flex items-center gap-3">
-                            {/* Preserve the original brand SVGs; Material Symbols are replaced below. */}
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
                                aria-label="Suivez-nous sur Facebook" className={socials}>
                                 <svg aria-hidden="true" focusable="false" className="size-4.5 fill-current"

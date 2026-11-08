@@ -24,7 +24,8 @@ export default function Hero() {
                             </p>
                             <p className="font-body text-[15px] leading-6 text-outline mb-6 max-w-xl">
                                 La santé de vos arbres est notre priorité. Une expertise certifiée alliant sécurité
-                                d’intervention et respect méticuleux de votre terrain </p>
+                                d’intervention et respect méticuleux de votre terrain
+                            </p>
                             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-6">
                                 <Link className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-secondary-fixed hover:bg-secondary text-on-secondary-fixed font-headline text-sm leading-5 font-semibold uppercase tracking-wider shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 "
                                     href="/contact">
@@ -38,6 +39,7 @@ export default function Hero() {
                                 </Link>
                             </div>
                         </div>
+
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full bg-surface-container-low p-4 border border-surface-container-highest">
                             <div className="flex flex-col border-b sm:border-b-0 sm:border-r border-outline-variant/40 pb-2 sm:pb-0 sm:pr-3">
                                 <span className="font-headline text-xs leading-4 font-semibold tracking-wider text-secondary uppercase">Silencieux</span>
@@ -53,6 +55,7 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+
                     <div className="lg:col-span-5">
                         <div className="relative bg-surface-container-high shadow-xl overflow-hidden h-full lg:grid lg:grid-rows-[87%_13%]">
                             <div className="relative w-full max-lg:order-first">
@@ -65,6 +68,7 @@ export default function Hero() {
                                     className="w-full h-full object-cover object-center"
                                 />
                             </div>
+
                             <div className="bg-primary text-on-primary p-4 flex items-center border-t-2">
                                 <div className="flex items-center gap-2">
                                     <div className="w-10 h-10 bg-secondary-fixed flex items-center justify-center text-primary shrink-0">
