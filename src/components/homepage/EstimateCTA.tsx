@@ -18,10 +18,10 @@ export default function EstimateCTA() {
             <div className="relative z-10 mx-auto max-w-7xl px-8">
                 <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
                     <div className="max-w-2xl text-left">
-                        <span className="mb-2 block text-xs leading-4 font-bold font-headline tracking-widest text-secondary-fixed uppercase">
+                        <span className="mb-2 block text-xs font-bold font-headline tracking-widest text-secondary-fixed uppercase">
                             Réponse rapide garantie
                         </span>
-                        <h2 className="mb-4 text-4xl leading-tight font-semibold font-headline tracking-tight text-on-primary">
+                        <h2 className="mb-4 text-3xl lg:text-4xl leading-tight uppercase font-semibold font-headline tracking-tight text-on-primary">
                             Obtenez votre estimation gratuite et sans engagement
                         </h2>
                         <p className="text-lg font-body leading-relaxed text-surface-container-high">
@@ -31,11 +31,11 @@ export default function EstimateCTA() {
                         </p>
                     </div>
 
-                    <div className="flex w-full shrink-0 flex-col items-center gap-4 lg:w-auto lg:items-end">
-                        <Link href="/contact" className="w-full bg-secondary-fixed px-8 py-4 text-center text-xl font-semibold font-headline tracking-wider text-on-secondary-fixed uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+                    <div className="font-headline flex w-full shrink-0 flex-col items-center gap-4 lg:w-auto lg:items-end">
+                        <Link href="/contact" className="w-full bg-secondary-fixed px-8 py-4 text-center text-base font-semibold tracking-wider text-on-secondary-fixed uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5">
                             Obtenir une soumission gratuite
                         </Link>
-                        <a href="tel:5144428299" className="inline-flex items-center gap-2 text-sm leading-5 font-semibold font-headline tracking-wide text-surface-container-high transition-colors duration-300 hover:text-secondary-fixed">
+                        <a href="tel:5144428299" className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-surface-container-high transition-colors duration-300 hover:text-secondary-fixed">
                             <PhoneCall size={24} aria-hidden="true" className="shrink-0 text-secondary-fixed" />
                             <span>Ou appelez-nous au (514) 442-8299</span>
                         </a>

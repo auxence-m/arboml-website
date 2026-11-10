@@ -3,16 +3,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import {Copyright, Phone, Mail, MapPin} from "lucide-react";
-import {services} from "@/lib/data";
 import {scrollToService} from "@/lib/utils";
 
 const navigation = [
-    {name: "Accueil", href: "/"},
-    {name: "Services", href: "/services"},
-    {name: "Zones", href: "/contact"},
-    {name: "Galerie", href: "/services"},
-    {name: "Contact", href: "/contact"},
-]
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Zones", href: "/contact" },
+    { name: "Galerie", href: "/services" },
+    { name: "Contact", href: "/contact" },
+];
+
+export const services = [
+    { id: "abattage", name: "Abattage d'arabes" },
+    { id: "elagage", name: "Élagage" },
+    { id: "taille", name: "Taille" },
+    { id: "haubanage", name: "Haubanage" },
+    { id: "plantation", name: "Plantation" },
+    { id: "diagnostic", name: "Diagnostic arboricole"}
+];
 
 const headings = "mb-4 text-xl leading-7 font-semibold uppercase tracking-wider text-on-primary";
 const links = "text-base leading-6 text-surface-container-high hover:text-secondary-fixed transition-colors duration-300";
@@ -21,7 +29,7 @@ const socials = "flex h-9 w-9 items-center justify-center rounded-full bg-primar
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-primary text-on-primary mt-12 border-t border-primary-container">
+        <footer className="w-full bg-primary text-on-primary border-t border-primary-container">
             <div className="mx-auto max-w-7xl px-8 pt-12 pb-6">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
                     {/*First*/}

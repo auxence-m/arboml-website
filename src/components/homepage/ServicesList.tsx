@@ -46,18 +46,16 @@ const services = [
 
 export default function ServicesList() {
     return (
-        <section id="services" aria-labelledby="services-heading" className="w-full scroll-mt-20 bg-surface-container-lowest py-16 font-sans lg:py-24">
+        <section id="services" aria-labelledby="services-heading" className="w-full bg-surface-container-lowest py-16 font-sans lg:py-24">
             <div className="mx-auto max-w-7xl px-8">
-                <div className="mb-16 border-b border-surface-container pb-8">
-                    <div className="max-w-2xl">
-                        <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
-                            <TreePine size={14} aria-hidden="true" className="shrink-0"/>
-                            <span>Prestations &amp; Savoir-faire</span>
-                        </div>
-                        <h2 className="font-headline text-[40px] leading-12 font-semibold tracking-tight text-primary">
-                            Nos solutions d’arboriculture raisonnée
-                        </h2>
+                <div className="mb-14 border-b text-center border-surface-container pb-8">
+                    <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
+                        <TreePine size={14} aria-hidden="true" className="shrink-0"/>
+                        <span>Prestations &amp; Savoir-faire</span>
                     </div>
+                    <h2 className="font-headline text-3xl lg:text-4xl uppercase leading-tight font-semibold tracking-tight text-primary">
+                        Nos solutions d’arboriculture raisonnée
+                    </h2>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

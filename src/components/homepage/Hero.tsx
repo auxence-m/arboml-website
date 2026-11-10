@@ -11,11 +11,11 @@ export default function Hero() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
                     <div className="lg:col-span-7 flex flex-col justify-between pr-0 lg:pr-6">
                         <div>
-                            <div className="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-primary font-headline text-xs font-semibold uppercase tracking-widest mb-4 shadow-sm border border-outline-variant/50">
+                            <div className="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-primary font-headline text-[11px] font-semibold uppercase tracking-widest mb-4 shadow-sm border border-outline-variant/50">
                                 <span className="h-2 w-2 shrink-0 rounded-full bg-secondary animate-pulse"></span>
                                 <span>Rive-Sud de Montréal • Arboriculture professionnelle</span>
                             </div>
-                            <h1 className="font-headline text-[40px] font-bold xl:text-6xl text-primary tracking-tight leading-tight mb-4">
+                            <h1 className="font-headline font-bold text-[40px] xl:text-6xl text-primary tracking-tight leading-[1.15] uppercase mb-4">
                                 Services professionnels d’entretien d’arbres sur la Rive-Sud
                             </h1>
                             <p className="font-body text-lg text-on-surface-variant max-w-2xl leading-relaxed mb-2 font-medium">

@@ -39,10 +39,10 @@ export default function FAQuestions() {
                     <span className="mb-2 block text-xs leading-4 font-bold font-headline tracking-widest text-secondary uppercase">
                         Clarté &amp; Conseils
                     </span>
-                    <h2 className="mb-4 text-4xl leading-tight font-semibold font-headline tracking-tight text-primary">
+                    <h2 className="mb-4 text-3xl lg:text-4xl leading-tight uppercase font-semibold font-headline tracking-tight text-primary">
                         Foire aux questions
                     </h2>
-                    <p className="mx-auto max-w-xl font-body text-lg leading-7 text-on-surface-variant">
+                    <p className="mx-auto max-w-2xl font-body text-lg leading-7 text-on-surface-variant">
                         Tout ce que vous devez savoir avant d’entreprendre des travaux
                         d’entretien arboricole sur votre terrain.
                     </p>

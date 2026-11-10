@@ -48,14 +48,14 @@ const features = [
 
 export default function WhyArboML() {
     return (
-        <section className="w-full bg-surface-container-low py-16 font-sans lg:py-24">
+        <section className="w-full bg-surface-container-low py-16 lg:py-24">
             <div className="mx-auto max-w-7xl px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
                     <div className="font-headline mb-2 inline-flex items-center gap-2 text-xs leading-4 font-bold tracking-widest text-secondary uppercase">
                         <Zap size={14} aria-hidden="true" className="shrink-0" />
                         <span>Engagement environnemental &amp; voisinage</span>
                     </div>
-                    <h2 className="mb-4 text-4xl leading-tight font-semibold tracking-tight text-primary">
+                    <h2 className="mb-4 text-3xl lg:text-4xl leading-tight uppercase font-semibold tracking-tight text-primary">
                         Pourquoi faire confiance à ARBOML ?
                     </h2>
                     <p className="text-lg font-body leading-relaxed text-on-surface-variant">
