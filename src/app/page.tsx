@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
-import WhyArboML from "@/components/WhyArboML";
-import EstimateCTA from "@/components/EstimateCTA";
-import ServicesOverview from "@/components/ServicesOverview";
-import AreasOverview from "@/components/AreasOverview";
-import FAQuestions from "@/components/FAQuestions";
+import Hero from "@/components/homepage/Hero";
+import WhyArboML from "@/components/homepage/WhyArboML";
+import EstimateCTA from "@/components/homepage/EstimateCTA";
+import ServicesList from "@/components/homepage/ServicesList";
+import AreasOverview from "@/components/homepage/AreasOverview";
+import FAQuestions from "@/components/homepage/FAQuestions";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div>
             <Hero />
-            <ServicesOverview />
+            <ServicesList />
             <WhyArboML />
             <AreasOverview />
             <EstimateCTA />

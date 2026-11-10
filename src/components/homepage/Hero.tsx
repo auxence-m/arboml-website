@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {ArrowRight, ChevronDown} from "lucide-react";
 import Image from "next/image";
+import heroImage from "../../../public/images/hero-image.jpg";
 
 
 export default function Hero() {
@@ -61,11 +62,11 @@ export default function Hero() {
                             <div className="relative w-full max-lg:order-first">
                                 <Image
                                     alt="Arboriste professionnel élagueur en hauteur effectuant un élagage sécuritaire dans un grand arbre sur la Rive-Sud de Montréal"
-                                    src="/hero-image.jpg"
-                                    width={2432}
-                                    height={1442}
+                                    src={heroImage}
                                     loading="eager"
-                                    className="w-full h-full object-cover object-center"
+                                    fetchPriority="high"
+                                    placeholder="blur"
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
 

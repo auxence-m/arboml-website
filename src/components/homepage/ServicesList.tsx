@@ -44,7 +44,7 @@ const services = [
     },
 ];
 
-export default function ServicesOverview() {
+export default function ServicesList() {
     return (
         <section id="services" aria-labelledby="services-heading" className="w-full scroll-mt-20 bg-surface-container-lowest py-16 font-sans lg:py-24">
             <div className="mx-auto max-w-7xl px-8">
