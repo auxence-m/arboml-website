@@ -18,8 +18,8 @@ export default function AreasOverview() {
         <section className="w-full border-t border-outline-variant/40 bg-surface-container-low/60 py-16 lg:py-24">
             <div className="mx-auto max-w-7xl px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
-                    <div className="mb-2 inline-flex items-center gap-2 text-xs leading-4 font-headline font-bold tracking-widest text-secondary uppercase">
-                        <MapPin size={14} aria-hidden="true" className="shrink-0"/>
+                    <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
+                        <MapPin size={16} aria-hidden="true" className="shrink-0"/>
                         <span>Couvre-territoire &amp; déplacements</span>
                     </div>
                     <h2 className="mb-4 text-3xl lg:text-4xl font-headline leading-tight uppercase font-semibold tracking-tight text-primary">
@@ -45,7 +45,7 @@ export default function AreasOverview() {
                 </ul>
 
                 <div className="flex justify-center">
-                    <Link href="/services" className="inline-flex group items-center gap-2 bg-secondary-fixed px-6 py-4 text-center text-sm font-headline font-semibold tracking-wider text-on-secondary-fixed uppercase shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
+                    <Link href="/cities" className="inline-flex group items-center gap-2 bg-secondary-fixed px-6 py-4 text-center text-sm font-headline font-semibold tracking-wider text-on-secondary-fixed uppercase shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
                         <Compass size={18} aria-hidden="true" className="shrink-0"/>
                         <span>Consulter tous nos territoires desservis</span>
                         <ArrowRight size={18} aria-hidden="true" className="shrink-0 group-hover:translate-x-0.5 transition-transform duration-300"/>

@@ -1,6 +1,6 @@
 import Hero from "@/components/homepage/Hero";
 import WhyArboML from "@/components/homepage/WhyArboML";
-import EstimateCTA from "@/components/homepage/EstimateCTA";
+import HomeCTA from "@/components/homepage/HomeCTA";
 import ServicesList from "@/components/homepage/ServicesList";
 import AreasOverview from "@/components/homepage/AreasOverview";
 import FAQuestions from "@/components/homepage/FAQuestions";
@@ -21,7 +21,7 @@ export default function Home() {
             <ServicesList />
             <WhyArboML />
             <AreasOverview />
-            <EstimateCTA />
+            <HomeCTA />
             <FAQuestions />
 
         </div>

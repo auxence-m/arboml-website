@@ -52,7 +52,7 @@ export default function WhyArboML() {
             <div className="mx-auto max-w-7xl px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
                     <div className="font-headline mb-2 inline-flex items-center gap-2 text-xs leading-4 font-bold tracking-widest text-secondary uppercase">
-                        <Zap size={14} aria-hidden="true" className="shrink-0" />
+                        <Zap size={16} aria-hidden="true" className="shrink-0" />
                         <span>Engagement environnemental &amp; voisinage</span>
                     </div>
                     <h2 className="mb-4 text-3xl lg:text-4xl leading-tight uppercase font-semibold tracking-tight text-primary">

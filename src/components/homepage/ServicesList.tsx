@@ -50,7 +50,7 @@ export default function ServicesList() {
             <div className="mx-auto max-w-7xl px-8">
                 <div className="mb-14 border-b text-center border-surface-container pb-8">
                     <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
-                        <TreePine size={14} aria-hidden="true" className="shrink-0"/>
+                        <TreePine size={16} aria-hidden="true" className="shrink-0"/>
                         <span>Prestations &amp; Savoir-faire</span>
                     </div>
                     <h2 className="font-headline text-3xl lg:text-4xl uppercase leading-tight font-semibold tracking-tight text-primary">

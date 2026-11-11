@@ -1,8 +1,8 @@
-import ServiceHero from "@/components/services/ServiceHero";
+import ServicesHero from "@/components/services/ServicesHero";
 import ServicesDetails from "@/components/services/ServicesDetails";
-import ServiceCTA from "@/components/services/ServiceCTA";
+import ServicesCTA from "@/components/services/ServicesCTA";
 import {Metadata} from "next";
-import ServiceCoverage from "@/components/services/ServiceCoverage";
+import ServicesAreas from "@/components/services/ServicesAreas";
 
 export const metadata: Metadata = {
     title: 'Nos services',
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 export default function Services() {
     return (
         <div>
-            <ServiceHero />
+            <ServicesHero />
             <ServicesDetails />
-            <ServiceCoverage />
-            <ServiceCTA />
+            <ServicesCTA />
+            <ServicesAreas />
         </div>
     );
 }

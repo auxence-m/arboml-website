@@ -3,15 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import {Copyright, Phone, Mail, MapPin} from "lucide-react";
-import {scrollToService} from "@/lib/utils";
+import {navigation, scrollToService} from "@/lib/utils";
 
-const navigation = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Zones", href: "/contact" },
-    { name: "Galerie", href: "/services" },
-    { name: "Contact", href: "/contact" },
-];
 
 export const services = [
     { id: "abattage", name: "Abattage d'arabes" },

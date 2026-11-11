@@ -180,7 +180,7 @@ export default function ServicesDetails() {
                                         </span>
                                     </div>
 
-                                    <h2 className="font-headline mb-2 text-3xl leading-tight font-semibold tracking-tight text-primary uppercase sm:text-[40px]">
+                                    <h2 className="font-headline mb-2 text-3xl leading-tight font-semibold tracking-tight text-primary uppercase sm:text-4xl">
                                         {service.title}
                                     </h2>
 

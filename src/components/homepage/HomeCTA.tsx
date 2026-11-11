@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { PhoneCall } from "lucide-react";
 
-export default function EstimateCTA() {
+export default function HomeCTA() {
     return (
-        <section className="relative w-full overflow-hidden bg-primary py-16 font-sans text-on-primary lg:py-24">
+        <section className="relative w-full overflow-hidden bg-primary-container py-16 text-on-primary lg:py-24">
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-5">
                 <svg className="h-full w-full" preserveAspectRatio="none" viewBox="0 0 100 100" focusable="false">
                     <path

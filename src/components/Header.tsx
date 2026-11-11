@@ -6,14 +6,8 @@ import Link from "next/link";
 import {Dialog, DialogBackdrop, DialogPanel} from '@headlessui/react'
 import {useSelectedLayoutSegment} from "next/navigation";
 import {Phone, Menu, XIcon} from "lucide-react";
+import {navigation} from "@/lib/utils";
 
-const navigation = [
-    {name: "Accueil", href: "/"},
-    {name: "Services", href: "/services"},
-    {name: "Zones", href: "/contact"},
-    {name: "Galerie", href: "/services"},
-    {name: "Contact", href: "/contact"},
-]
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

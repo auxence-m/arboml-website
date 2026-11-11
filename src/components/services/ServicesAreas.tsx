@@ -17,18 +17,18 @@ const cities = [
     "Saint-Lambert",
 ] ;
 
-export default function ServiceCoverage() {
+export default function ServicesAreas() {
     return (
         <section className="w-full bg-surface-container-lowest py-16 lg:py-24 border-b border-surface-container">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center mb-12">
                     <div className="lg:col-span-8">
-                        <div className="font-headline mb-2 inline-flex items-center gap-2 text-xs leading-4 font-bold tracking-widest text-secondary uppercase">
-                            <MapIcon size={14} aria-hidden="true" className="shrink-0" />
+                        <div className="font-headline mb-2 inline-flex items-center gap-2 text-xs font-bold tracking-widest text-secondary uppercase">
+                            <MapIcon size={16} aria-hidden="true" className="shrink-0" />
                             <span>couvre-territoire &amp; déplacements</span>
                         </div>
-                        <h2 className="text-3xl lg:text-[40px] leading-tight font-semibold font-headline tracking-tight text-primary uppercase mb-4">
-                            Intervention rapide sur l&apos;ensemble de la Rive-Sud de Montréal
+                        <h2 className="text-3xl lg:text-4xl leading-tight font-semibold font-headline tracking-tight text-primary uppercase mb-4">
+                            Intervention sur l&apos;ensemble de la Rive-Sud de Montréal
                         </h2>
                         <p className="text-lg font-body text-on-surface-variant leading-relaxed">
                             Nous pouvons nous rendre dans tous les secteur de la Rive-Sud.
@@ -36,7 +36,7 @@ export default function ServiceCoverage() {
                         </p>
                     </div>
                     <div className="lg:col-span-4 flex justify-start lg:justify-end">
-                        <Link href="/" className="inline-flex items-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
+                        <Link href="/cities" className="inline-flex items-center text-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
                             <span>Consulter tous nos territoires</span>
                             <ArrowRight size={18} aria-hidden="true" className="text-secondary-fixed group-hover:translate-x-1 transition-transform shrink-0 duration-300" />
                         </Link>
