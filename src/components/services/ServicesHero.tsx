@@ -16,7 +16,7 @@ const services = [
 export default function ServicesHero() {
     return (
         <section aria-labelledby="services-heading" className="relative w-full overflow-hidden bg-surface-container-low pt-8 pb-16 lg:pt-14 lg:pb-24">
-            <div className="mx-auto max-w-7xl px-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-4 flex flex-wrap items-center font-headline gap-2">
                     <span className="inline-flex items-center gap-1 bg-primary px-2 py-1 text-[11px] font-semibold tracking-wider text-secondary-fixed uppercase">
                         <span aria-hidden="true" className="h-2 w-2 shrink-0 bg-secondary-fixed" />

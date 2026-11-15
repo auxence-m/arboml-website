@@ -23,7 +23,7 @@ const socials = "flex h-9 w-9 items-center justify-center rounded-full bg-primar
 export default function Footer() {
     return (
         <footer className="w-full bg-primary text-on-primary border-t border-primary-container">
-            <div className="mx-auto max-w-7xl px-8 pt-12 pb-6">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-6">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
                     {/*First*/}
                     <div className="flex flex-col">

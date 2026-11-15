@@ -16,7 +16,7 @@ const areas = [
 export default function AreasOverview() {
     return (
         <section className="w-full border-t border-outline-variant/40 bg-surface-container-low/60 py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
                     <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
                         <MapPin size={16} aria-hidden="true" className="shrink-0"/>

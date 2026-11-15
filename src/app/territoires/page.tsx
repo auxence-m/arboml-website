@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     title: "",
     description: "",
     alternates: {
-        canonical: "https://www.arboml.ca/cities",
+        canonical: "https://www.arboml.ca/territoires",
     }
 };
 
 
-export default function Cities() {
+export default function Territoires() {
     return (
         <div>
             <CitiesHero />

@@ -1,12 +1,12 @@
 import Image, {StaticImageData} from "next/image";
 import {ArrowRight, CircleCheck, CircleHelp, Info, Leaf, LucideIcon} from "lucide-react";
 import Link from "next/link";
-import abattageImage from "../../../public/images/abattage-image.jpg";
-import elagageImage from "../../../public/images/elagage-image.jpg";
-import tailleImage from "../../../public/images/taille-image.jpg";
-import haubanageImage from "../../../public/images/haubanage-image.jpg";
-import plantationImage from "../../../public/images/plantation-image.jpg";
-import diagnosticImage from "../../../public/images/diagnostic-image.jpg";
+import abattageImage from "../../../public/services/abattage-image.jpg";
+import elagageImage from "../../../public/services/elagage-image.jpg";
+import tailleImage from "../../../public/services/taille-image.jpg";
+import haubanageImage from "../../../public/services/haubanage-image.jpg";
+import plantationImage from "../../../public/services/plantation-image.jpg";
+import diagnosticImage from "../../../public/services/diagnostic-image.jpg";
 
 
 type Service = {
@@ -157,7 +157,7 @@ const images: ServiceImage[] = [
 
 export default function ServicesDetails() {
     return (
-        <div className="mx-auto max-w-7xl space-y-12 px-8 py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl space-y-12 px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
             {services.map((service, index) => {
 
                 const image = images.find((image) => image.id === service.id);
@@ -223,14 +223,18 @@ export default function ServicesDetails() {
                             </div>
 
                             <div className={`group relative lg:col-span-5 ${index % 2 === 1 ? "lg:order-first" : ""}`}>
-                                <div className="relative h-80 w-full overflow-hidden bg-primary-container lg:h-96">
+                                <div className="relative w-full overflow-hidden bg-surface-container-high h-80 lg:h-96">
                                     <Image
                                         src={image.src}
                                         alt={image.alt}
-                                        loading="lazy"
-                                        fetchPriority="high"
+                                        loading="eager"
                                         placeholder="blur"
-                                        className="h-full w-full object-cover"
+                                        fill
+                                        sizes="(min-width: 1280px) 451.83px,
+                                            (min-width: 1024px) calc(41.666667vw - 81.5px),
+                                            (min-width: 640px) calc(100vw - 98px),
+                                            calc(100vw - 82px)"
+                                        className="object-cover"
                                     />
                                 </div>
                             </div>

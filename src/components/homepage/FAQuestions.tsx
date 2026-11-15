@@ -34,7 +34,7 @@ const questions = [
 export default function FAQuestions() {
     return (
         <section  className="w-full bg-surface py-16 lg:py-24">
-            <div className="mx-auto max-w-4xl px-8">
+            <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-14 text-center">
                     <div className="mb-2 inline-flex items-center gap-2 text-xs font-headline font-bold tracking-widest text-secondary uppercase">
                         <CircleHelp size={16} aria-hidden="true" className="shrink-0"/>

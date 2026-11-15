@@ -62,7 +62,7 @@ const regions = [
 export default function CitiesDirectory() {
     return (
         <section className="w-full bg-surface-container-low py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-14">
                     <div className="mb-2 inline-flex items-center gap-2 font-headline text-xs font-bold uppercase tracking-widest text-secondary">
                         <MapPin size={16} aria-hidden="true" className="shrink-0" />

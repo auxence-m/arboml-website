@@ -1,13 +1,12 @@
 import Link from "next/link";
 import {ArrowRight, ChevronDown} from "lucide-react";
 import Image from "next/image";
-import heroImage from "../../../public/images/hero-image.jpg";
-
+import heroImage from "../../../public/services/hero-image.jpg";
 
 export default function Hero() {
     return (
         <section className="relative w-full bg-surface-bright pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden border-b border-surface-container">
-            <div className="max-w-7xl mx-auto px-8 relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
                     <div className="lg:col-span-7 flex flex-col justify-between pr-0 lg:pr-6">
                         <div>
@@ -58,15 +57,20 @@ export default function Hero() {
                     </div>
 
                     <div className="lg:col-span-5">
-                        <div className="relative bg-surface-container-high shadow-xl overflow-hidden h-full lg:grid lg:grid-rows-[87%_13%]">
-                            <div className="relative w-full max-lg:order-first">
+                        <div className="relative bg-surface-container-high shadow-xl overflow-hidden h-full">
+                            <div className="relative w-full aspect-4/3 sm:aspect-video lg:aspect-4/5 max-lg:order-first">
                                 <Image
                                     alt="Arboriste professionnel élagueur en hauteur effectuant un élagage sécuritaire dans un grand arbre sur la Rive-Sud de Montréal"
                                     src={heroImage}
                                     loading="eager"
                                     fetchPriority="high"
                                     placeholder="blur"
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    sizes="(min-width: 80rem) 29.917rem,
+                                        (min-width: 64rem) calc(41.667vw - 3.417rem),
+                                        (min-width: 40rem) calc(100vw - 3rem),
+                                        calc(100vw - 2rem)"
+                                    className="object-cover"
                                 />
                             </div>
 

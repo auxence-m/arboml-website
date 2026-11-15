@@ -35,7 +35,7 @@ const questions = [
 export default function CitiesFAQ() {
     return (
         <section className="w-full bg-surface py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-14 max-w-3xl">
                     <div className="mb-1 inline-flex items-center gap-2 font-headline text-xs font-bold uppercase tracking-widest text-secondary">
                         <CircleHelp aria-hidden="true" className="h-4 w-4" />

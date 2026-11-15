@@ -15,7 +15,7 @@ export default function HomeCTA() {
                 </svg>
             </div>
 
-            <div className="relative z-10 mx-auto max-w-7xl px-8">
+            <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
                     <div className="max-w-2xl text-left">
                         <span className="mb-2 block text-xs font-bold font-headline tracking-widest text-secondary-fixed uppercase">

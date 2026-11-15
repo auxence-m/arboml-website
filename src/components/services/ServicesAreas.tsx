@@ -20,7 +20,7 @@ const cities = [
 export default function ServicesAreas() {
     return (
         <section className="w-full bg-surface-container-lowest py-16 lg:py-24 border-b border-surface-container">
-            <div className="max-w-7xl mx-auto px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center mb-12">
                     <div className="lg:col-span-8">
                         <div className="font-headline mb-2 inline-flex items-center gap-2 text-xs font-bold tracking-widest text-secondary uppercase">
@@ -36,7 +36,7 @@ export default function ServicesAreas() {
                         </p>
                     </div>
                     <div className="lg:col-span-4 flex justify-start lg:justify-end">
-                        <Link href="/cities" className="inline-flex items-center text-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
+                        <Link href="/territoires" className="inline-flex items-center text-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
                             <span>Consulter tous nos territoires</span>
                             <ArrowRight size={18} aria-hidden="true" className="text-secondary-fixed group-hover:translate-x-1 transition-transform shrink-0 duration-300" />
                         </Link>

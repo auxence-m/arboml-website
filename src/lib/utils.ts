@@ -8,7 +8,7 @@ export function scrollToService(id: string) {
 export const navigation = [
     { name: "Accueil", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Territoires", href: "/cities" },
-    { name: "Galerie", href: "/services" },
+    { name: "Territoires", href: "/territoires" },
+    { name: "Galerie", href: "/galerie" },
     { name: "Contact", href: "/contact" },
 ];
