@@ -18,7 +18,7 @@ export default function ServicesCTA() {
                         </p>
                     </div>
 
-                    <div className="lg:col-span-4 flex flex-col font-headline gap-2 items-start lg:items-end">
+                    <div className="lg:col-span-4 flex flex-col font-headline gap-4 items-start lg:items-end">
                         <Link href="/contact" className="w-full sm:w-auto text-center bg-secondary-fixed hover:bg-secondary-container text-on-secondary-fixed text-sm uppercase tracking-wider px-6 py-4 shadow-md transition-all font-bold duration-300">
                             Demander une soumission gratuite
                         </Link>

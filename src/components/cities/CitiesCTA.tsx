@@ -34,7 +34,7 @@ export default function CitiesCTA() {
                         <Link href="/contact" className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-secondary-fixed text-on-secondary-fixed font-headline text-sm font-bold uppercase tracking-wider hover:bg-secondary hover:text-on-primary transition-all duration-300">
                             Obtenir mon évaluation gratuite
                         </Link>
-                        <a href="tel:5144428299" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-4 text-surface-container-high text-sm font-semibold font-headline hover:text-secondary-fixed transition-colors duration-300">
+                        <a href="tel:5144428299" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 text-surface-container-high text-sm font-semibold font-headline hover:text-secondary-fixed transition-colors duration-300">
                             <PhoneCall size={20} aria-hidden="true" className="shrink-0 text-secondary-fixed"/>
                             <span className="">(514) 442-8299</span>
                         </a>

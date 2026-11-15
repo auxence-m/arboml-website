@@ -22,7 +22,7 @@ export default function GalleryCTA() {
                             Demander une évaluation gratuite
                         </Link>
                         <a href="tel:5144428299"
-                           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-4 text-surface-container-high text-sm font-semibold font-headline hover:text-secondary-fixed transition-colors duration-300">
+                           className="w-full sm:w-auto inline-flex items-center justify-center gap-1 px-4 text-surface-container-high text-sm font-semibold font-headline hover:text-secondary-fixed transition-colors duration-300">
                             <Phone size={18} aria-hidden="true" className="shrink-0 text-secondary-fixed"/>
                             <span className="">(514) 442-8299</span>
                         </a>

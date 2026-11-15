@@ -103,13 +103,15 @@ export default function CitiesDirectory() {
                     ))}
                 </div>
 
-                <div className="mt-6 border-outline-variant border-l-4 border-l-secondary border p-6 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6">
+                <div className="mt-6 border-outline-variant border-l-4 border-l-secondary border px-4 py-6 flex items-start gap-3 sm:gap-6">
                     <div className="flex items-start gap-4 sm:gap-6">
                         <div className="w-12 h-12 rounded-full bg-secondary-fixed text-primary-container flex items-center justify-center shrink-0">
-                            <CircleHelp size={24} aria-hidden="true" className="shrink-0 text-secondary"
-                            />
+                            <CircleHelp size={24} aria-hidden="true" className="shrink-0 text-secondary"/>
                         </div>
-                        <div>
+                    </div>
+
+                    <div className="flex flex-col xl:flex-row gap-4 w-auto">
+                        <div className="">
                             <h4 className="font-headline text-2xl text-primary-container font-bold tracking-tight mb-1">
                                 Votre ville ne figure pas dans la liste ?
                             </h4>
@@ -119,19 +121,19 @@ export default function CitiesDirectory() {
                                 sans engagement.
                             </p>
                         </div>
-                    </div>
 
-                    <div className="flex items-center gap-4 shrink-0 w-full md:w-auto">
-                        <Link href="/contact"
-                              className="inline-flex items-center justify-center gap-1 bg-primary-container text-on-primary font-headline text-sm font-bold px-6 py-4 uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors duration-300 text-center w-full md:w-auto shadow-sm">
-                            <Mail aria-hidden="true" className="shrink-0" />
-                            <span>Nous contacter</span>
-                        </Link>
-                        <a href="tel:5144428299"
-                            className="hidden sm:inline-flex items-center justify-center gap-1 text-primary-container font-headline text-sm font-bold px-4 py-4 tracking-wide hover:text-secondary transition-colors duration-300">
-                            <Phone size={18} aria-hidden="true" className="shrink-0 text-secondary" />
-                            <span>(514) 442-8299</span>
-                        </a>
+                        <div className="flex items-center">
+                            <Link href="/contact"
+                                  className="inline-flex items-center justify-center gap-1 bg-primary-container text-on-primary font-headline text-sm font-bold px-6 py-4 uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors duration-300 text-center w-full md:w-auto shadow-sm">
+                                <Mail aria-hidden="true" className="shrink-0" />
+                                <span>Nous contacter</span>
+                            </Link>
+                            <a href="tel:5144428299"
+                               className="hidden sm:inline-flex items-center justify-center gap-1 text-primary-container font-headline text-sm font-bold px-4 py-4 tracking-wide hover:text-secondary transition-colors duration-300">
+                                <Phone size={18} aria-hidden="true" className="shrink-0 text-secondary" />
+                                <span>(514) 442-8299</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

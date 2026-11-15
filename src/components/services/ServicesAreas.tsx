@@ -36,7 +36,7 @@ export default function ServicesAreas() {
                         </p>
                     </div>
                     <div className="lg:col-span-4 flex justify-start lg:justify-end">
-                        <Link href="/territoires" className="inline-flex items-center text-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
+                        <Link href="/territoires" className="w-full sm:w-auto inline-flex items-center justify-center text-center gap-1 bg-primary hover:bg-on-secondary-fixed-variant text-on-primary text-sm uppercase tracking-wider px-6 py-4 transition-all duration-300 group font-bold shadow-sm" >
                             <span>Consulter tous nos territoires</span>
                             <ArrowRight size={18} aria-hidden="true" className="text-secondary-fixed group-hover:translate-x-1 transition-transform shrink-0 duration-300" />
                         </Link>
