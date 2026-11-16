@@ -1,26 +1,25 @@
 import Link from "next/link";
-import { MapPin, TreePine, Mountain, Building2, Waves, CircleCheck, CircleHelp, Mail, Phone } from "lucide-react";
+import { MapPin, CircleHelp, Mail, Phone } from "lucide-react";
 
 const regions = [
     {
-        label: "MRC 01",
+        id: "01",
         name: "Agglomération de Longueuil",
-        icon: Building2,
         cities: [
             "Boucherville",
-            "Brossard",
             "Longueuil",
-            "Saint-Bruno-de-Montarville",
             "Saint-Hubert",
-            "Saint-Lambert",
             "Greenfield Park",
+            "Brossard",
+            "Saint-Lambert",
+            "Saint-Bruno-de-Montarville"
         ],
     },
     {
-        label: "MRC 01",
-        name: "Marguerite-D'Youville",
-        icon: TreePine,
+        id: "02",
+        name: "MRC de Marguerite-D’Youville",
         cities: [
+            "Calixa-Lavallée",
             "Sainte-Julie",
             "Saint-Amable",
             "Varennes",
@@ -28,33 +27,34 @@ const regions = [
         ],
     },
     {
-        label: "MRC 02",
-        name: "La Vallée-du-Richelieu",
-        icon: Mountain,
+        id: "03",
+        name: "MRC de La Vallée-du-Richelieu",
         cities: [
-            "Belœil",
-            "Carignan",
-            "Chambly",
-            "McMasterville",
             "Mont-Saint-Hilaire",
+            "Saint-Marc-sur-Richelieu",
+            "Saint-Mathieu-de-Belœil",
             "Otterburn Park",
-            "Saint-Basile-le-Grand",
-            "Saint-Jean-sur-Richelieu",
         ],
     },
     {
-        label: "MRC 04",
-        name: "Roussillon",
-        icon: Waves,
+        id: "04",
+        name: "MRC de Roussillon",
         cities: [
             "Candiac",
-            "Châteauguay",
             "Delson",
             "La Prairie",
             "Sainte-Catherine",
-            "Saint-Isidore",
-            "Saint-Philippe",
             "Saint-Constant",
+            "Saint-Mathieu",
+            "Saint-Philippe",
+        ],
+    },
+    {
+        id: "05",
+        name: "MRC des Maskoutains",
+        cities: [
+            "Sainte-Madeleine",
+            "Saint-Hyacinthe",
         ],
     },
 ];
@@ -73,37 +73,37 @@ export default function CitiesDirectory() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                    {regions.map(({ label, name, icon: Icon, cities }) => (
-                        <article key={name} className="border border-surface-dim bg-surface-container-lowest p-6 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-                            <div className="mb-6 flex items-center gap-2 border-b border-outline pb-2">
-                                <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-secondary-fixed text-primary-container">
-                                    <Icon size={18} aria-hidden="true" className="shrink-0" />
-                                </div>
-                                <div>
-                                    <span className="block font-headline text-xs font-bold uppercase leading-none tracking-widest text-secondary">
-                                        {label}
-                                    </span>
-                                    <h3 className="font-headline text-xl font-bold uppercase tracking-tight text-primary-container">
-                                        {name}
-                                    </h3>
-                                </div>
+                <div className="flex flex-col border-y divide-y divide-outline-variant/60 border-outline-variant/60">
+                    {regions.map(({ id, name, cities }) => (
+                        <div key={id} className="group gap-4 px-4 py-12 transition-colors duration-300 hover:bg-surface-container-high/30 flex flex-col md:flex-row md:items-baseline-last justify-between">
+                            <div className="shrink-0 flex flex-col items-start md:w-5/12">
+                                <span className="mb-1 block text-xs font-bold font-headline uppercase tracking-widest text-secondary">
+                                    {id} / Secteur
+                                </span>
+                                <h3 className="text-2xl font-bold font-headline uppercase leading-snug tracking-tight text-primary-container transition-colors duration-300 group-hover:text-secondary">
+                                    {name}
+                                </h3>
                             </div>
-                            <ul className="mb-6 space-y-4">
-                                {cities.map((city) => (
-                                    <li key={city} className="flex items-center gap-1 border-b border-outline/50 pb-1.5 last:border-b-0">
-                                        <CircleCheck size={18} aria-hidden="true" className="shrink-0 text-secondary"/>
-                                        <span className="font-body text-base font-semibold text-primary-container">
-                                            {city}
-                                        </span>
+
+                            <ul className="text-lg leading-relaxed text-primary-container font-body md:w-7/12">
+                                {cities.map((city, index) => (
+                                    <li key={city} className="inline">
+                                        {index > 0 && (
+                                            <span>
+                                                {" "}
+                                                <span aria-hidden="true">·</span>
+                                                {" "}
+                                            </span>
+                                        )}
+                                        <span className="font-semibold">{city}</span>
                                     </li>
                                 ))}
                             </ul>
-                        </article>
+                        </div>
                     ))}
                 </div>
 
-                <div className="mt-6 border-outline-variant border-l-4 border-l-secondary border px-4 py-6 flex items-start gap-3 sm:gap-6">
+                <div className="mt-8 border-outline-variant border-l-4 border-l-secondary border px-4 py-6 flex items-start gap-3 sm:gap-6">
                     <div className="flex items-start gap-4 sm:gap-6">
                         <div className="w-12 h-12 rounded-full bg-secondary-fixed text-primary-container flex items-center justify-center shrink-0">
                             <CircleHelp size={24} aria-hidden="true" className="shrink-0 text-secondary"/>

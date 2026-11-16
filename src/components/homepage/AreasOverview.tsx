@@ -8,9 +8,9 @@ const areas = [
     "Sainte-Julie",
     "Varennes",
     "Candiac",
-    "Saint-Bruno",
-    "Beloeil",
-    "Saint-Lambert",
+    "Saint-Bruno-de-Montarville",
+    "Saint-Amable",
+    "Saint-Hyacinthe",
 ];
 
 export default function AreasOverview() {
