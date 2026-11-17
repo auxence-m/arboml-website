@@ -9,10 +9,10 @@ const cities = [
     "Saint-Hubert",
     "Varennes",
     "Candiac",
+    "La Prairie",
     "Saint-Bruno-de-Montarville",
     "Saint-Amable",
-    "La Prairie",
-    "Saint-Lambert",
+    "Sainte-Madeleine",
 ] ;
 
 export default function ServicesAreas() {
@@ -29,8 +29,8 @@ export default function ServicesAreas() {
                             Intervention sur l&apos;ensemble de la Rive-Sud de Montréal
                         </h2>
                         <p className="text-lg font-body text-on-surface-variant leading-relaxed">
-                            Nous pouvons nous rendre dans tous les secteur de la Rive-Sud.
-                            Estimations gratuites et sans frais de déplacement pour tous vos projets arboricoles.
+                            Nous pouvons nous rendre dans la plupart des secteurs de la Rive-Sud.
+                            Estimations gratuites et services offerts avec le souci constant de la sécurité et du travail bien fait.
                         </p>
                     </div>
                     <div className="lg:col-span-4 flex justify-start lg:justify-end">

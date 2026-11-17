@@ -3,7 +3,7 @@ export default function GalleryHero() {
         <section className="relative w-full bg-surface-container-low pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="inline-flex items-center gap-1 px-2 py-1 bg-surface-container-high text-primary-container mb-4">
-                    <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                    <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"/>
                     <span className="font-headline text-[11px] uppercase tracking-widest font-bold">
                         Portfolio &amp; Chantiers • Rive-Sud
                     </span>

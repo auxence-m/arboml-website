@@ -36,7 +36,7 @@ export default function HomeCTA() {
                             Obtenir une soumission gratuite
                         </Link>
                         <a href="tel:5144428299" className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-surface-container-high transition-colors duration-300 hover:text-secondary-fixed">
-                            <PhoneCall size={24} aria-hidden="true" className="shrink-0 text-secondary-fixed" />
+                            <PhoneCall size={20} aria-hidden="true" className="shrink-0 text-secondary-fixed" />
                             <span>Ou appelez-nous au (514) 442-8299</span>
                         </a>
                     </div>

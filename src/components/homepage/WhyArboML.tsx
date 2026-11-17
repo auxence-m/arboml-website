@@ -59,9 +59,10 @@ export default function WhyArboML() {
                         Pourquoi faire confiance à ARBOML ?
                     </h2>
                     <p className="text-lg font-body leading-relaxed text-on-surface-variant">
-                        Pour votre tranquillité et celle de vos voisins, nous  nous utilisons principalement des{" "}
-                        <span className="font-semibold text-primary">outils électriques</span>{" "}
-                        afin de réduire le bruit et la pollution. sur votre terrain.
+                        Pour votre tranquillité et celle de vos voisins, nous utilisons les{" "}
+                        <span className="font-semibold text-primary"> outils électriques lorsque possible</span>{" "}
+                         et limitons l’utilisation d’outils à essence au strict nécessaire,
+                        afin de réduire au maximum le bruit et la pollution sur votre terrain.
                     </p>
                 </div>
 

@@ -1,4 +1,4 @@
-import { CircleHelp, Compass, BadgeDollarSign, Clock3, Wrench } from "lucide-react";
+import { CircleHelp } from "lucide-react";
 
 const questions = [
     {
@@ -6,14 +6,12 @@ const questions = [
         topic: "Intervenez-vous à l’extérieur de votre zone de service habituelle ?",
         answer: "Nous pouvons accepter certains projets à l’extérieur de notre territoire selon la distance, " +
             "l’ampleur des travaux et nos disponibilités. Contactez-nous pour discuter de votre projet.",
-        icon: Compass,
     },
     {
         id: "faq-2",
         topic: "Y a-t-il des frais de déplacement pour venir évaluer mes arbres ?",
-        answer: "Aucun frais de visite. Nos estimations sont entièrement gratuites et sans engagement. " +
-            "Un élagueur qualifié inspecte vos arbres et vous remet un devis transparent avant toute intervention.",
-        icon: BadgeDollarSign,
+        answer: "Nos estimations sont gratuites pour les travaux d’abattage, d’élagage et de taille, sans frais de déplacement. " +
+            "Le diagnostic arboricole est toutefois facturé à l’heure, déplacement compris. Les modalités de facturation vous sont communiquées avant le rendez-vous",
     },
     {
         id: "faq-3",
@@ -21,14 +19,12 @@ const questions = [
         answer: "Les délais varie selon la période de l’année, notre horaire et la nature des travaux. " +
             "Contactez-nous pour connaître nos prochaines disponibilités dans votre secteur, " +
             "autant pour l’évaluation que pour la réalisation des travaux.",
-        icon: Clock3,
     },
     {
         id: "faq-4",
         topic: "Offrez-vous les mêmes services dans toutes les municipalités desservies ?",
         answer: "Nos principaux services sont offerts dans l’ensemble de notre territoire. " +
             "Pour les travaux nécessitant de l’équipement spécialisé, nous confirmons la faisabilité selon votre emplacement et l’accès à votre terrain.",
-        icon: Wrench,
     },
 ];
 
@@ -51,18 +47,15 @@ export default function CitiesFAQ() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-                    {questions.map(({id, topic, answer, icon: Icon }) => (
+                    {questions.map(({id, topic, answer }) => (
                         <div key={id} className="flex flex-col justify-between border border-surface-dim bg-surface-container-low p-6 shadow-sm">
                             <div>
-                                <div className="mb-1 flex items-start gap-2">
-                                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center bg-primary-container text-secondary-fixed">
-                                        <Icon size={16} aria-hidden="true" className="shrink-0" />
-                                    </span>
+                                <div className="mb-1 flex items-center gap-2">
                                     <h3 className="font-headline text-xl font-bold leading-snug text-primary-container">
                                         {topic}
                                     </h3>
                                 </div>
-                                <p className="pl-9 font-body text-base leading-relaxed text-on-surface-variant">
+                                <p className="font-body text-base leading-relaxed text-on-surface-variant">
                                     {answer}
                                 </p>
                             </div>

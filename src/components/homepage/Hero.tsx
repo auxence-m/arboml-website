@@ -11,7 +11,7 @@ export default function Hero() {
                     <div className="lg:col-span-7 flex flex-col justify-between pr-0 lg:pr-6">
                         <div>
                             <div className="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-primary font-headline text-[11px] font-semibold uppercase tracking-widest mb-4 shadow-sm border border-outline-variant/50">
-                                <span className="h-2 w-2 shrink-0 rounded-full bg-secondary animate-pulse"></span>
+                                <span className="h-2 w-2 shrink-0 rounded-full bg-secondary animate-pulse"/>
                                 <span>Rive-Sud de Montréal • Arboriculture professionnelle</span>
                             </div>
                             <h1 className="font-headline font-bold text-[40px] xl:text-6xl text-primary tracking-tight leading-[1.15] uppercase mb-4">
@@ -42,8 +42,8 @@ export default function Hero() {
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full bg-surface-container-low p-4 border border-surface-container-highest">
                             <div className="flex flex-col border-b sm:border-b-0 sm:border-r border-outline-variant/40 pb-2 sm:pb-0 sm:pr-3">
-                                <span className="font-headline text-xs leading-4 font-semibold tracking-wider text-secondary uppercase">Silencieux</span>
-                                <span className="font-body text-sm leading-5 text-on-surface-variant font-medium">Outillage 100% électrique</span>
+                                <span className="font-headline text-xs leading-4 font-semibold tracking-wider text-secondary uppercase">Qualifié</span>
+                                <span className="font-body text-sm leading-5 text-on-surface-variant font-medium">Formation continue et techniques à jour</span>
                             </div>
                             <div className="flex flex-col border-b sm:border-b-0 sm:border-r border-outline-variant/40 pb-2 sm:pb-0 sm:pr-3">
                                 <span className="font-headline text-xs leading-4 font-semibold tracking-wider text-secondary uppercase">Sécuritaire</span>
@@ -51,7 +51,7 @@ export default function Hero() {
                             </div>
                             <div className="flex flex-col">
                                 <span className="font-headline text-xs leading-4 font-semibold tracking-wider text-secondary uppercase">Actif</span>
-                                <span className="font-body text-sm leading-5 text-on-surface-variant font-medium">Disponibilité 4 saisons</span>
+                                <span className="font-body text-sm leading-5 text-on-surface-variant font-medium">Disponible 4 saisons sur la Rive-Sud</span>
                             </div>
                         </div>
                     </div>

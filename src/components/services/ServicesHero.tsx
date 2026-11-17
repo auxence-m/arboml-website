@@ -33,10 +33,10 @@ export default function ServicesHero() {
                         <h1 className="mb-4 leading-[1.15] font-bold font-headline tracking-tight text-primary uppercase text-[40px] lg:text-6xl">
                             Nos services d’arboriculture et d&apos;entretien d&apos;arbres
                         </h1>
-                        <p className="font-body text-lg max-w-2xl leading-relaxed text-on-surface-variant">
-                            Nous offrons différents services professionnels d&#39;arboriculture. Nos interventions sont rigoureuses,
-                            sécuritaires et respectueuses du végétal pour préserver la santé, la beauté et la sécurité
-                            de vos arbres sur l&apos;ensemble de la Rive-Sud.
+                        <p className="font-body text-lg max-w-3xl leading-relaxed text-on-surface-variant">
+                            Nous offrons différents services professionnels d&#39;arboriculture. Nos interventions
+                            sont rigoureuses, sécuritaires et respectueuses du végétal pour préserver la santé
+                            et la beauté de vos arbres sur l&apos;ensemble de la Rive-Sud.
                         </p>
                     </div>
                 </div>

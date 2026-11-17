@@ -13,8 +13,8 @@ export default function GalleryCTA() {
                         Vous avez un projet d&#39;arboriculture similaire en tête
                     </h2>
                     <p className="font-body text-lg text-surface-container-high max-w-2xl mb-6 leading-relaxed">
-                        Estimation gratuite sans engagement, déplacement sans frais partout sur la Rive-Sud
-                        de Montréal et intervention respectueuse de votre propriété et de vos arbres.
+                        Estimation gratuite sans engagement partout sur la Rive-Sud de Montréal
+                        et intervention sécuritaire, respectueuse de votre propriété et de vos arbres.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">

@@ -105,7 +105,7 @@ export default function CitiesDirectory() {
 
                 <div className="mt-8 border-outline-variant border-l-4 border-l-secondary border px-4 py-6 flex items-start gap-3 sm:gap-6">
                     <div className="flex items-start gap-4 sm:gap-6">
-                        <div className="w-12 h-12 rounded-full bg-secondary-fixed text-primary-container flex items-center justify-center shrink-0">
+                        <div className="size-10 md:size-12 rounded-full bg-secondary-fixed text-primary-container flex items-center justify-center shrink-0">
                             <CircleHelp size={24} aria-hidden="true" className="shrink-0 text-secondary"/>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function CitiesDirectory() {
                             <p className="font-body text-lg text-on-surface-variant max-w-2xl">
                                 Nous pouvons peut-être quand même vous aider! Contactez notre
                                 équipe pour vérifier la faisabilité et obtenir votre estimation
-                                sans engagement.
+                                gratuite.
                             </p>
                         </div>
 
@@ -126,7 +126,7 @@ export default function CitiesDirectory() {
                             <Link href="/contact"
                                   className="inline-flex items-center justify-center gap-1 bg-primary-container text-on-primary font-headline text-sm font-bold px-6 py-4 uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors duration-300 text-center w-full md:w-auto shadow-sm">
                                 <Mail aria-hidden="true" className="shrink-0" />
-                                <span>Nous contacter</span>
+                                <span>Vérifier mon secteur</span>
                             </Link>
                             <a href="tel:5144428299"
                                className="hidden sm:inline-flex items-center justify-center gap-1 text-primary-container font-headline text-sm font-bold px-4 py-4 tracking-wide hover:text-secondary transition-colors duration-300">

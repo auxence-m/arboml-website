@@ -26,8 +26,8 @@ export default function AreasOverview() {
                         Nous intervenons sur toutes la Rive-Sud de Montréal
                     </h2>
                     <p className="text-lg font-body leading-relaxed text-on-surface-variant">
-                        Nous offrons nos services dans l’ensemble des municipalités de la Rive-Sud de Montréal sans aucuns frais de
-                        déplacement additionnels.
+                        Nous offrons nos services dans la majorité des municipalités de la Rive-Sud de Montréal
+                        tout au long de l’année avec une approche attentive et professionnelle.
                     </p>
                 </div>
 
@@ -45,7 +45,7 @@ export default function AreasOverview() {
                 </ul>
 
                 <div className="flex justify-center">
-                    <Link href="/cities" className="inline-flex group items-center gap-2 bg-secondary-fixed px-6 py-4 text-center text-sm font-headline font-semibold tracking-wider text-on-secondary-fixed uppercase shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
+                    <Link href="/territoires" className="inline-flex group items-center gap-2 bg-secondary-fixed px-6 py-4 text-center text-sm font-headline font-semibold tracking-wider text-on-secondary-fixed uppercase shadow-sm transition-transform duration-300 hover:-translate-y-0.5">
                         <Compass size={18} aria-hidden="true" className="shrink-0"/>
                         <span>Consulter tous nos territoires desservis</span>
                         <ArrowRight size={18} aria-hidden="true" className="shrink-0 group-hover:translate-x-0.5 transition-transform duration-300"/>
