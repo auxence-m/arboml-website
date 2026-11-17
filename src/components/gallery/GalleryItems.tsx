@@ -34,7 +34,7 @@ const galleryItems: GalleryItem[] = [
     {
         id: "img-3",
         type: "image",
-        alt: "Arboriste attaché de facon sécuritaire dans un arbre d'une cour résidentielle à Boucherville",
+        alt: "Arboriste attaché de façon sécuritaire dans un arbre d'une cour résidentielle à Boucherville",
         src: "/galerie/IMG_6092.JPEG",
         width: 1982,
         height: 1586
@@ -73,6 +73,14 @@ const galleryItems: GalleryItem[] = [
         height: 1586
     },
     {
+        id: "img-7",
+        type: "image",
+        alt: "Déchiquetage des branches d'un frêne apres abattage dans une cour résidentielle à Boucherville",
+        src: "/galerie/IMG_6286.JPEG",
+        width: 1982,
+        height: 1586
+    },
+    {
         id: "vid-2",
         type: "video",
         alt: "Aperçu de l'abattage du tronc d'un frêne dans une cour résidentielle à Boucherville",
@@ -80,14 +88,6 @@ const galleryItems: GalleryItem[] = [
         poster: "/galerie/IMG_6210_still.JPEG",
         width: 1586,
         height: 1982
-    },
-    {
-        id: "img-7",
-        type: "image",
-        alt: "Déchiquetage des branches d'un frêne apres abattage dans une cour résidentielle à Boucherville",
-        src: "/galerie/IMG_6286.JPEG",
-        width: 1982,
-        height: 1586
     },
     {
         id: "img-8",
@@ -123,6 +123,22 @@ const galleryItems: GalleryItem[] = [
         height: 1586
     },
     {
+        id: "img-12",
+        type: "image",
+        alt: "Reste plat du tronc d'un frêne et terrain propre apres abattage dans une cour résidentielle à Boucherville",
+        src: "/galerie/IMG_6289.JPEG",
+        width: 1982,
+        height: 1586
+    },
+    {
+        id: "img-13",
+        type: "image",
+        alt: "Setup de travaille complet de ARBOML avec camion, remorque et déchiqueteuse a branche",
+        src: "/galerie/IMG_6258.JPEG",
+        width: 1982,
+        height: 1586
+    },
+    {
         id: "vid-3",
         type: "video",
         alt: "Aperçu d'un abattage par section d'un frêne dans une cour résidentielle à Boucherville",
@@ -132,12 +148,20 @@ const galleryItems: GalleryItem[] = [
         height: 1982
     },
     {
-        id: "img-12",
+        id: "img-14",
         type: "image",
-        alt: "Reste plat du tronc d'un frêne et terrain propre apres abattage dans une cour résidentielle à Boucherville",
-        src: "/galerie/IMG_6289.JPEG",
-        width: 1982,
-        height: 1586
+        alt: "Arboriste attaché de façon sécuritaire avec sa scie électrique dans un arbre d'une cour résidentielle à Boucherville",
+        src: "/galerie/IMG_6310.JPEG",
+        width: 3769,
+        height: 3015
+    },
+    {
+        id: "img-15",
+        type: "image",
+        alt: "Arboriste attaché de façon sécuritaire effectuant un battage par section d'un arbre d'une cour résidentielle à Boucherville",
+        src: "/galerie/IMG_6311.JPEG",
+        width: 3780,
+        height: 3024
     },
 ];
 
