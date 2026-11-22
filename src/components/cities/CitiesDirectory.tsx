@@ -88,13 +88,7 @@ export default function CitiesDirectory() {
                             <ul className="text-lg leading-relaxed text-primary-container font-body md:w-7/12">
                                 {cities.map((city, index) => (
                                     <li key={city} className="inline">
-                                        {index > 0 && (
-                                            <span>
-                                                {" "}
-                                                <span aria-hidden="true">·</span>
-                                                {" "}
-                                            </span>
-                                        )}
+                                        {index > 0 && (<span aria-hidden="true" className="mx-1.5 font-bold font-body">·</span>)}
                                         <span className="font-semibold">{city}</span>
                                     </li>
                                 ))}

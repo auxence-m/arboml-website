@@ -81,6 +81,14 @@ const galleryItems: GalleryItem[] = [
         height: 1586
     },
     {
+        id: "img-8",
+        type: "image",
+        alt: "Nettoyage apres abattage dans une cour résidentielle à Boucherville",
+        src: "/galerie/IMG_6254.JPEG",
+        width: 1982,
+        height: 1586
+    },
+    {
         id: "vid-2",
         type: "video",
         alt: "Aperçu de l'abattage du tronc d'un frêne dans une cour résidentielle à Boucherville",
@@ -88,14 +96,6 @@ const galleryItems: GalleryItem[] = [
         poster: "/galerie/IMG_6210_still.JPEG",
         width: 1586,
         height: 1982
-    },
-    {
-        id: "img-8",
-        type: "image",
-        alt: "Nettoyage apres abattage dans une cour résidentielle à Boucherville",
-        src: "/galerie/IMG_6254.JPEG",
-        width: 1982,
-        height: 1586
     },
     {
         id: "img-9",
@@ -202,14 +202,14 @@ export default function GalleryItems() {
                         <span>Réalisations techniques en images</span>
                     </div>
                     <h2 className="mb-4 font-headline text-3xl lg:text-4xl uppercase leading-tight font-semibold tracking-tight text-primary">
-                        Un aperçu de notre savoir-faire et de nox travaux sur le terrain
+                        Un aperçu de notre savoir-faire et de nos travaux sur le terrain
                     </h2>
                     <p className="text-lg font-body leading-relaxed text-on-surface-variant">
                         Cliquez sur une image ou une vidéo pour l&#39;afficher en plein écran
                     </p>
                 </div>
 
-                <div className="gap-3 space-y-3 columns-1  md:columns-2 lg:columns-3">
+                <div className="gap-3 space-y-3 columns-1 md:columns-2 lg:columns-3">
                     {galleryItems.map((item, index) => (
                         <button key={item.id} type="button" onClick={() => {setActiveIndex(index); setIsOpen(true)}} className="group relative block w-full break-inside-avoid cursor-pointer overflow-hidden bg-surface-container-highest text-left shadow-sm">
                             <Image src={item.type === "video" ? item.poster : item.src}

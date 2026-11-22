@@ -57,8 +57,8 @@ export default function FAQuestions() {
                                     <DisclosureButton className="flex w-full cursor-pointer items-center justify-between gap-4 text-left font-headline text-xl leading-7 font-semibold tracking-tight text-primary">
                                         <span>{question.topic}</span>
                                         <span aria-hidden="true" className="relative h-6 w-6 shrink-0 text-secondary">
-                                                <Plus size={24} className={`absolute inset-0 transition-all duration-300 ${open ? "opacity-0" : "opacity-100"}`}/>
-                                                <Minus size={24} className={`absolute inset-0 transition-all duration-300 ${open ? "opacity-100" : "opacity-0"}`}/>
+                                                <Plus size={24} className={`absolute inset-0 transition-all duration-500 ${open ? "opacity-0" : "opacity-100"}`}/>
+                                                <Minus size={24} className={`absolute inset-0 transition-all duration-500 ${open ? "opacity-100" : "opacity-0"}`}/>
                                             </span>
                                     </DisclosureButton>
 

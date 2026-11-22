@@ -2,6 +2,7 @@ import {Metadata} from "next";
 import GalleryItems from "@/components/gallery/GalleryItems";
 import GalleryHero from "@/components/gallery/GalleryHero";
 import GalleryCTA from "@/components/gallery/GalleryCTA";
+import WorkTimeline from "@/components/gallery/WorkTimeline";
 
 export const metadata: Metadata = {
     title: "",
@@ -17,6 +18,7 @@ export default function Galerie() {
             <GalleryHero />
             <GalleryItems />
             <GalleryCTA />
+            <WorkTimeline />
         </div>
     )
 }
