@@ -268,6 +268,8 @@ export default function GalleryItems() {
                                 <video key={activeItem.id}
                                        ref={videoRef}
                                        src={activeItem.src}
+                                       width={activeItem.width}
+                                       height={activeItem.height}
                                        poster={activeItem.poster}
                                        controls
                                        playsInline
@@ -278,6 +280,8 @@ export default function GalleryItems() {
                                 <Image key={activeItem.id}
                                        src={activeItem.src}
                                        alt={activeItem.alt}
+                                       width={activeItem.width}
+                                       height={activeItem.height}
                                        fill
                                        sizes="(min-width: 84rem) 80rem,
                                            (min-width: 64rem) calc(100vw - 4rem),

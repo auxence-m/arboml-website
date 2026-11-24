@@ -1,7 +1,6 @@
-import ContactHero from "@/components/ContactHero";
-import ContactForm from "@/components/ContactForm";
-import ContactCTA from "@/components/ContactCTA";
+import ContactHero from "@/components/contact/ContactHero";
 import {Metadata} from "next";
+import ContactMain from "@/components/contact/ContactMain";
 
 export const metadata: Metadata = {
     title: "Contactez-nous",
@@ -15,8 +14,7 @@ export default function Contact() {
     return (
         <div>
             <ContactHero />
-            <ContactForm />
-            <ContactCTA />
+            <ContactMain />
         </div>
     );
 }

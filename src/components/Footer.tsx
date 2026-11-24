@@ -6,7 +6,7 @@ import {Copyright, Phone, Mail, MapPin} from "lucide-react";
 import {navigation, scrollToService} from "@/lib/utils";
 
 
-export const services = [
+const services = [
     { id: "abattage", name: "Abattage d'arabes" },
     { id: "elagage", name: "Élagage" },
     { id: "taille", name: "Taille" },

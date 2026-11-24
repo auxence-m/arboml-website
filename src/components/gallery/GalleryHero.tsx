@@ -9,7 +9,7 @@ export default function GalleryHero() {
                     </span>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                    <div className="lg:col-span-8 xl:col-span-6">
+                    <div className="lg:col-span-8 xl:col-span-7">
                         <h1 className="font-headline text-[40px] lg:text-6xl uppercase tracking-tight text-primary-container leading-[1.15] font-bold mb-4">
                             Nos réalisations sur le terrain
                         </h1>

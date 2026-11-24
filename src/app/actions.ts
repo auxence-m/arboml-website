@@ -3,76 +3,90 @@
 import {z} from "zod";
 import {redirect} from "next/navigation";
 import {cookies} from "next/headers";
+import {services} from "@/lib/utils";
 
 const formSchema = z.object({
-    name: z.string({error: "Ce champ est requis"}).trim().min(1, {error: "Ce champ est requis"})
+    fullName: z.string().trim().min(1, {error: "Ce champ est requis"})
         .min(3, {error: "Veuillez saisir un nom valide (3 caractère minimum)"}),
 
-    email: z.string({error: "Ce champ est requis"}).trim().min(1, {error: "Ce champ est requis"})
+    email: z.string().trim().min(1, {error: "Ce champ est requis"})
         .pipe(z.email({pattern: z.regexes.rfc5322Email, error: "Veuillez saisir une adresse courriel valide (ex: nom@exemple.com)"})),
 
-    phone: z.string({error: "Ce champ est requis"}).trim().min(1, {error: "Ce champ est requis"})
-        .regex(/^(?:\+?1[-. ]?)?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/, {error: "Veuillez saisir un numéro de téléphone valide"}),
+    phoneNumber: z.string().trim().min(1, {error: "Ce champ est requis"})
+        .regex(/^(?:\+?1[ .-]?)?(?:\(\d{3}\)|\d{3})[ .-]?\d{3}[ .-]?\d{4}$/, {error: "Veuillez saisir un numéro de téléphone valide"}),
 
-    message: z.string({error: "Ce champ est requis"}).trim().min(1, {error: "Ce champ est requis"})
-        .min(15, {error: "Veuillez saisir un message valide (15 caractère minimum)"})
+    municipality: z.string().trim().min(1, {error: "Ce champ est requis"})
+        .min(3, {error: "Veuillez saisir un une municipalité valide (3 caractère minimum)"}),
+
+    services: z.array(z.enum(services.map(({ name }) => name), {error: "Veuillez choisir un service parmi les options proposées."}))
+        .min(1, {error: "Veuillez sélectionner au moins un service."}),
+
+    description: z.string({error: "Ce champ est requis"}).trim().min(1, {error: "Ce champ est requis"})
+        .min(15, {error: "Veuillez ajoutez quelques détails à votre demande (15 caractère minimum)"})
+        .max(2000, "Veuillez limitez votre message à 2000 caractères."),
+
+    consent: z.literal("accept", {error: "Veuillez accepter d’être contacté(e) pour envoyer votre demande."})
 });
 
 export type FormState = {
-    message: string;
+    errorMessage?: string;
     errors?: {
-        name?: string[];
+        fullName?: string[];
         email?: string[];
-        phone?: string[];
-        message?: string[];
+        phoneNumber?: string[];
+        municipality?: string[];
+        services?: string[];
+        description?: string[];
+        consent?: string[];
     };
-    data?: FormData
-    submissionId?: number
-}
+};
 
 export async function submitForm(prevState: FormState, formData: FormData):Promise<FormState> {
     const validatedFields= formSchema.safeParse({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        phone: formData.get("phone"),
-        message: formData.get("message"),
+        fullName: formData.get("fullName") ?? "",
+        email: formData.get("email") ?? "",
+        phoneNumber: formData.get("phoneNumber") ?? "",
+        municipality: formData.get("municipality")?? "",
+        services: formData.getAll("services"),
+        description: formData.get("description") ?? "",
+        consent: formData.get("consent") ?? ""
     });
 
     if (!validatedFields.success) {
-        return {
-            message: "",
-            errors: z.flattenError(validatedFields.error).fieldErrors,
-            data: formData,
-        }
+        return { errors: z.flattenError(validatedFields.error).fieldErrors }
     }
 
-    // Call sendEmail Firebase cloud function
-    try {
-        const response = await fetch("https://us-central1-arboml.cloudfunctions.net/sendEmail", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            // body: JSON.stringify(validatedFields.data)
-            body: JSON.stringify(validatedFields.data),
-        });
+    // Only runs after validation passed.
+    const selectedServices = services
+        .filter(({ name }) => validatedFields.data.services.includes(name))
+        .map(({ value }) => value);
 
-        // Form is validated, only send success or error messages
-        if (response.status !== 200) {
-            return {
-                message: "ERROR",
-                data: formData,
-                submissionId: Date.now()
-            }
-        }
-    } catch (error) {
-        console.error(error);
-        return {
-            message: "ERROR",
-            data: formData,
-            submissionId: Date.now()
-        }
+    const payload = {
+        ...validatedFields.data,
+        services: selectedServices,
     }
+
+    console.log(payload);
+
+    // // Call sendEmail Firebase cloud function
+    // try {
+    //     const response = await fetch("https://us-central1-arboml.cloudfunctions.net/sendEmail", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(payload),
+    //     });
+    //
+    //     // Form is validated, only send success or error messages
+    //     if (response.status !== 200) {
+    //         console.error("Cloud function returned status: ", response.status);
+    //         return { message: "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard" }
+    //     }
+    // } catch (error) {
+    //     console.error("Cloud function returned status: ", error);
+    //     return { message: "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard" }
+    // }
 
     // Redirect to confirmation page
     // The confirmation page is only accessible through redirect from the contact page
