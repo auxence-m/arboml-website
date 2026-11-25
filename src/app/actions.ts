@@ -3,7 +3,8 @@
 import {z} from "zod";
 import {redirect} from "next/navigation";
 import {cookies} from "next/headers";
-import {services} from "@/lib/utils";
+import {ContactFormState, formatPhoneNumber, formatServices, formatSubmittedAt, readContactFormFields, services, splitFullName} from "@/lib/utils";
+import {Resend} from "resend";
 
 const formSchema = z.object({
     fullName: z.string().trim().min(1, {error: "Ce champ est requis"})
@@ -25,35 +26,24 @@ const formSchema = z.object({
         .min(15, {error: "Veuillez ajoutez quelques détails à votre demande (15 caractère minimum)"})
         .max(2000, "Veuillez limitez votre message à 2000 caractères."),
 
-    consent: z.literal("accept", {error: "Veuillez accepter d’être contacté(e) pour envoyer votre demande."})
+    consent: z.literal("accept", {error: "Veuillez accepter d’être contacté(e) pour envoyer votre demande."}),
+
+    submittedAt: z.iso.datetime(),
 });
 
-export type FormState = {
-    errorMessage?: string;
-    errors?: {
-        fullName?: string[];
-        email?: string[];
-        phoneNumber?: string[];
-        municipality?: string[];
-        services?: string[];
-        description?: string[];
-        consent?: string[];
-    };
-};
-
-export async function submitForm(prevState: FormState, formData: FormData):Promise<FormState> {
-    const validatedFields= formSchema.safeParse({
-        fullName: formData.get("fullName") ?? "",
-        email: formData.get("email") ?? "",
-        phoneNumber: formData.get("phoneNumber") ?? "",
-        municipality: formData.get("municipality")?? "",
-        services: formData.getAll("services"),
-        description: formData.get("description") ?? "",
-        consent: formData.get("consent") ?? ""
-    });
+export async function submitForm(previousState: ContactFormState, formData: FormData):Promise<ContactFormState> {
+    const validatedFields= formSchema.safeParse(readContactFormFields(formData));
 
     if (!validatedFields.success) {
-        return { errors: z.flattenError(validatedFields.error).fieldErrors }
+        return { errors: z.flattenError(validatedFields.error).fieldErrors };
+    }
+
+    const submissionId = z.uuidv4().safeParse(formData.get("submissionId"));
+    if (!submissionId.success) {
+        return {
+            errors: {},
+            formError: "Une erreur s'est produite, rechargez la page, puis réessayez",
+        };
     }
 
     // Only runs after validation passed.
@@ -64,30 +54,70 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
     const payload = {
         ...validatedFields.data,
         services: selectedServices,
+    };
+
+    // console.log(payload);
+
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+        throw new Error("Missing contact email configuration.");
     }
 
-    console.log(payload);
+    try {
+        const resend = new Resend(apiKey);
 
-    // // Call sendEmail Firebase cloud function
-    // try {
-    //     const response = await fetch("https://us-central1-arboml.cloudfunctions.net/sendEmail", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify(payload),
-    //     });
-    //
-    //     // Form is validated, only send success or error messages
-    //     if (response.status !== 200) {
-    //         console.error("Cloud function returned status: ", response.status);
-    //         return { message: "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard" }
-    //     }
-    // } catch (error) {
-    //     console.error("Cloud function returned status: ", error);
-    //     return { message: "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard" }
-    // }
+        const {display, dial} = formatPhoneNumber(payload.phoneNumber);
+        const {firstName} = splitFullName(payload.fullName)
 
+        const { error } = await resend.batch.send(
+            [
+                {
+                    from: "ARBOML <soumissions@notification.arboml.ca>",
+                    to: "auxencemedja@gmail.com",
+                    template: {
+                        id: "estimate-request",
+                        variables: {
+                            FULL_NAME: payload.fullName,
+                            EMAIL_ADDRESS: payload.email,
+                            MESSAGE: payload.description,
+                            MESSAGE_LENGTH: payload.description.length,
+                            MUNICIPALITY: payload.municipality,
+                            PHONE_DIAL: dial,
+                            PHONE_NUMBER: display,
+                            SERVICES: formatServices(payload.services),
+                            SUBMITTED_AT: formatSubmittedAt(new Date(payload.submittedAt)),
+                        }
+                    }
+                },
+                {
+                    from: "ARBOML <soumissions@notification.arboml.ca>",
+                    to: payload.email,
+                    template: {
+                        id: "client-confirmation",
+                        variables: {
+                            CLIENT_FIRST_NAME: firstName,
+                            FULL_NAME: payload.fullName,
+                            EMAIL_ADDRESS: payload.email,
+                            MESSAGE: payload.description,
+                            MUNICIPALITY: payload.municipality,
+                            PHONE_NUMBER: display,
+                            SERVICES: formatServices(payload.services),
+                        }
+                    }
+                }
+            ],
+            { idempotencyKey: `contact-form-${submissionId.data}`},
+        );
+
+        if (error) throw new Error(error.message);
+    } catch (error) {
+        console.error("Contact form email submission failed: ", error);
+
+        return {
+            errors: {},
+            formError: "Nous n’avons pas pu confirmer l’envoi de votre demande. Veuillez réessayer",
+        };
+    }
     // Redirect to confirmation page
     // The confirmation page is only accessible through redirect from the contact page
 

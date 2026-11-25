@@ -2,16 +2,16 @@
 
 import {Button, Field, Fieldset, Input, Label, Textarea, Checkbox, Description, Legend, Listbox, ListboxButton, ListboxOptions, ListboxOption} from "@headlessui/react";
 import {ArrowRight, Check, ChevronDown, ChevronRight, CircleAlert, LoaderCircle, LockKeyhole} from "lucide-react";
-import {FormState, submitForm} from "@/app/actions";
-import {useActionState, useState} from "react";
+import {submitForm} from "@/app/actions";
+import {useActionState, useRef, useState} from "react";
 import ContactErrorBanner from "@/components/contact/ContactErrorBanner";
-import {services} from "@/lib/utils";
+import {ContactFormState, readContactFormFields, services} from "@/lib/utils";
 
 type TextFieldConfig = (typeof contactRows)[number][number];
 type ServiceValue = (typeof services)[number]["name"];
 
 const controlBase = "w-full min-w-0 bg-surface-container-low text-base font-body placeholder:text-outline transition-colors focus:bg-surface-container-lowest focus:outline-2";
-const initialState: FormState = { errors: {} }
+const initialState: ContactFormState = { errors: {} }
 
 const contactRows = [
     [
@@ -94,7 +94,24 @@ function ErrorBanner({ count }: { count: number }) {
 
 
 export default function ContactForm() {
-    const [state, submitAction, pending] = useActionState(submitForm, initialState);
+    const lastSubmission = useRef<{ snapshot: string; id: string; submittedAt: string; } | null>(null);
+
+    const [state, submitAction, pending] = useActionState<ContactFormState, FormData>(
+        (previousState, formData) => {
+            const snapshot = JSON.stringify(readContactFormFields(formData));
+
+            // Create an ID on the first submit or when the submitted values change.
+            if (!lastSubmission.current || lastSubmission.current.snapshot !== snapshot) {
+                lastSubmission.current = { snapshot, id: crypto.randomUUID(),  submittedAt: new Date().toISOString() };
+            }
+
+            formData.set("submissionId", lastSubmission.current.id);
+            formData.set("submittedAt", lastSubmission.current.submittedAt);
+
+            return submitForm(previousState, formData);
+        },
+        initialState
+    );
 
     const [selected, setSelected] = useState<ServiceValue[]>([]);
     const labels = services
@@ -171,7 +188,7 @@ export default function ContactForm() {
                               rows={5}
                               placeholder="Vous pouver preciser la hauteur approximative de l'arbre, les contraintes d'accès (clôture, piscine), la proximité de fils électriques et tout détail utile..."
                               invalid={Boolean(descriptionError)}
-                              className={controlClass(descriptionError) + " resize-y p-4"} />
+                              className={controlClass(descriptionError) + " resize-y p-4  whitespace-pre-line"} />
                     <FieldError message={descriptionError} />
                 </Field>
 
@@ -216,9 +233,9 @@ export default function ContactForm() {
                 </p>
             </form>
 
-            {/*TODO: action*/}
+            {/*TODO: Honeypot field*/}
             {
-              !pending && state.errorMessage && <ContactErrorBanner message={state.errorMessage} />
+              !pending && state.formError && <ContactErrorBanner message={state.formError} />
             }
 
         </div>

@@ -1,4 +1,4 @@
-import {CircleAlert, TriangleAlert, XIcon} from "lucide-react";
+import {CircleAlert, XIcon} from "lucide-react";
 import {Button} from "@headlessui/react";
 import {useState} from "react";
 
@@ -25,7 +25,7 @@ export default function ContactErrorBanner({message}: {message: string}) {
                             Échec de l&#39;envoi de votre demande
                         </h2>
                         <p className="font-body text-[14px] leading-snug text-on-error/90">
-                            {message} {" Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard"} ou nous appeler directement au {" "}
+                            {message} {" "} ou nous appeler directement au {" "}
                             <a href="tel:5144428299" className="underline font-semibold hover:text-on-error">
                                 (514) 442-8299
                             </a>
