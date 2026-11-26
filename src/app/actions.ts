@@ -32,6 +32,11 @@ const formSchema = z.object({
 });
 
 export async function submitForm(previousState: ContactFormState, formData: FormData):Promise<ContactFormState> {
+    // Bot detected — silently ignore
+    if (formData.get("contactWebsite")) {
+        redirect("/")
+    }
+
     const validatedFields= formSchema.safeParse(readContactFormFields(formData));
 
     if (!validatedFields.success) {
@@ -124,7 +129,7 @@ export async function submitForm(previousState: ContactFormState, formData: Form
     //set cookies to allow access to confirmation page
     const cookieStore = await cookies()
     cookieStore.set({
-        name: "form-submitted",
+        label: "form-submitted",
         value: "true",
         path: "/",
         maxAge: 60,

@@ -231,9 +231,20 @@ export default function ContactForm() {
                     <LockKeyhole size={16} aria-hidden="true" className="shrink-0" />
                     Vos informations restent strictement confidentielles. Aucune obligation d’achat.
                 </p>
+
+
+                {/*Honeypot field*/}
+                <div className="hidden">
+                    <label htmlFor="contact-website" className="font-semibold font-headline text-primary tracking-wide">Laissez ce champ vide.</label>
+                    <input className="min-w-0 bg-surface-container-low text-base font-body ml-2"
+                        id="contact-website"
+                        name="contactWebsite"
+                        type="text"
+                        autoComplete="off"
+                    />
+                </div>
             </form>
 
-            {/*TODO: Honeypot field*/}
             {
               !pending && state.formError && <ContactErrorBanner message={state.formError} />
             }
