@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {Copyright, Phone, Mail, MapPin} from "lucide-react";
-import {navigationItems, scrollToService} from "@/lib/utils";
+import {navigationLinks, scrollToService} from "@/lib/utils";
 
 
 const services = [
@@ -55,7 +55,7 @@ export default function Footer() {
                     <div>
                         <h2 className={headings}>Navigation</h2>
                         <ul className="space-y-2">
-                            {navigationItems.map((item) => (
+                            {navigationLinks.map((item) => (
                                 <li key={item.name}>
                                     <Link href={item.href} className={links}>
                                         {item.name}

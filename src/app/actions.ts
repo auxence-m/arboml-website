@@ -129,7 +129,7 @@ export async function submitForm(previousState: ContactFormState, formData: Form
     //set cookies to allow access to confirmation page
     const cookieStore = await cookies()
     cookieStore.set({
-        label: "form-submitted",
+        name: "form-submitted",
         value: "true",
         path: "/",
         maxAge: 60,

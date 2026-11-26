@@ -6,7 +6,7 @@ import Link from "next/link";
 import {Dialog, DialogBackdrop, DialogPanel} from '@headlessui/react'
 import {useSelectedLayoutSegment} from "next/navigation";
 import {Phone, Menu, XIcon} from "lucide-react";
-import {navigationItems} from "@/lib/utils";
+import {navigationLinks} from "@/lib/utils";
 
 
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div className="hidden lg:flex gap-6">
-                    {navigationItems.map((item) => (
+                    {navigationLinks.map((item) => (
                         <Link key={item.name} href={item.href}
                               className={`font-headline text-[15px] font-semibold hover:text-secondary hover:font-bold transition-colors duration-300 ${pathname === item.href ? "text-secondary font-bold underline underline-offset-7 decoration-2" : "text-on-surface-variant"}`}>
                             {item.name}
@@ -93,7 +93,7 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-outline-variant">
                             <div className="py-6">
-                                {navigationItems.map((item) => (
+                                {navigationLinks.map((item) => (
                                     <Link key={item.name} href={item.href} onClick={closeMobileMenu}
                                           className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-on-surface-variant">
                                         {item.name}

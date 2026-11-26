@@ -5,7 +5,7 @@ export function scrollToService(id: string) {
     }
 }
 
-export const navigationItems = [
+export const navigationLinks = [
     { name: "Accueil", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Territoires", href: "/territoires" },
