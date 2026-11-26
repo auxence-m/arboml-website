@@ -11,7 +11,7 @@ const areas = [
     "Saint-Bruno-de-Montarville",
     "Saint-Amable",
     "Saint-Hyacinthe",
-];
+] as const;
 
 export default function AreasOverview() {
     return (

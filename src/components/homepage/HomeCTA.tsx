@@ -25,7 +25,7 @@ export default function HomeCTA() {
                             Obtenez votre estimation gratuite et sans engagement
                         </h2>
                         <p className="text-lg font-body leading-relaxed text-surface-container-high">
-                            Discutez directement avec nous de vos projets d’arbres. Nous
+                            Discutez avec nous de vos projets d’arboricoles. Nous
                             analysons vos contraintes et vous fournissons une évaluation claire
                             et détaillée.
                         </p>

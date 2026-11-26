@@ -57,7 +57,7 @@ const regions = [
             "Saint-Hyacinthe",
         ],
     },
-];
+] as const;
 
 export default function CitiesDirectory() {
     return (

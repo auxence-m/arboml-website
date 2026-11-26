@@ -26,7 +26,7 @@ const questions = [
         answer: "Nos principaux services sont offerts dans l’ensemble de notre territoire. " +
             "Pour les travaux nécessitant de l’équipement spécialisé, nous confirmons la faisabilité selon votre emplacement et l’accès à votre terrain.",
     },
-];
+]as const;
 
 export default function CitiesFAQ() {
     return (

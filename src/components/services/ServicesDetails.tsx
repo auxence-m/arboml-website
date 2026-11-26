@@ -23,7 +23,7 @@ type Service = {
 };
 
 type ServiceImage = {
-    id: string;
+    id: (typeof services)[number]["id"];
     src: StaticImageData;
     alt: string;
 };
@@ -152,7 +152,7 @@ const images: ServiceImage[] = [
         src: diagnosticImage,
         alt: "Vue de pres du tronc malade d'un arbre dans la cours avant d'une maison dans un quartier de la Rive-Sud de Montreal. "
     },
-]
+];
 
 
 export default function ServicesDetails() {

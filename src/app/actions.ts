@@ -114,7 +114,9 @@ export async function submitForm(previousState: ContactFormState, formData: Form
             { idempotencyKey: `contact-form-${submissionId.data}`},
         );
 
-        if (error) throw new Error(error.message);
+        if (error) {
+            console.error("Resend batch send failed: ", error.message);
+        }
     } catch (error) {
         console.error("Contact form email submission failed: ", error);
 

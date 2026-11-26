@@ -11,7 +11,7 @@ const services = [
     { id: "haubanage", label: "Haubanage" },
     { id: "plantation", label: "Plantation" },
     { id: "diagnostic", label: "Diagnostic" },
-];
+] as const;
 
 export default function ServicesHero() {
     return (

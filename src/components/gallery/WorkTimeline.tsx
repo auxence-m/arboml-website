@@ -34,7 +34,7 @@ const TimelineSteps = [
         description: "Une fois le devis accepté, nous convenons d’une date avec vous. " +
             "Notre équipe certifiée sécurise la zone, réalise les travaux prévus et nettoie les lieux avant son départ.",
     },
-];
+] as const;
 
 export default function WorkTimeline() {
     return (

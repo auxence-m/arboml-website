@@ -34,7 +34,7 @@ const services = [
     },
     {
         title: "Plantation stratégique",
-        description: "Sélection rigoureuse d’essences indigènes adaptées au climat québécois et au sol de votre lot, avec mise en terre aux standards horticoles.",
+        description: "Sélection rigoureuse d’essences indigènes adaptées au climat québécois et au sol de votre lot, avec mise en terre conforme aux standards horticoles.",
         icon: Sprout,
     },
     {
@@ -42,7 +42,7 @@ const services = [
         description: "Évaluation phytosanitaire et mécanique complète de vos végétaux pour déceler champignons, chancres, pourritures internes et risques de chute.",
         icon: Search,
     },
-];
+] as const;
 
 export default function ServicesList() {
     return (

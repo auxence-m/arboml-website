@@ -44,7 +44,7 @@ const features = [
             'Nettoyage complet des lieux à la fin des travaux, pour vous laisser un terrain propre et impeccable.',
         icon: BrushCleaning,
     },
-]
+] as const;
 
 export default function WhyArboML() {
     return (
